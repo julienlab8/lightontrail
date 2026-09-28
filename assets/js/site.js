@@ -31,20 +31,24 @@
     });
   })();
 
-  // Film: poster + custom play button, controls appear after first play
+  // Film: poster + custom play button, the YouTube player only loads on click
   (function () {
     var frame = document.querySelector('.film-frame');
     if (!frame) return;
-    var video = frame.querySelector('.film-video');
     var btn = frame.querySelector('.film-play');
     btn.addEventListener('click', function () {
-      video.setAttribute('controls', '');
+      var iframe = document.createElement('iframe');
+      iframe.className = 'film-video';
+      iframe.src = 'https://www.youtube-nocookie.com/embed/' + frame.dataset.youtube + '?autoplay=1&rel=0&playsinline=1';
+      iframe.title = 'Film du Trail Pierre-Percée';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+      frame.querySelector('.film-video').replaceWith(iframe);
       frame.classList.add('playing');
-      video.play();
     });
   })();
 
-  // Countdown to race start (Sunday 4 April 2027, 07:30 local — L'Intégrale 52 km départ)
+  // Countdown to race start (Sunday 4 April 2027, 07:30 local — départ du 54 KM***)
   (function () {
     var root = document.getElementById('countdown');
     if (!root) return;
