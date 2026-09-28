@@ -459,7 +459,7 @@
 
   /* ============ ROUTE EMBED (OpenRunner) ============ */
   .route-embed { margin: 36px 0 0; }
-  .route-embed iframe { width: 100%; height: 600px; border: 1px solid var(--line); border-radius: var(--r-card); display: block; background: var(--surface); }
+  .route-embed iframe { width: 100%; height: 600px; border: 1px solid var(--line); border-radius: var(--r-card); display: block; background: var(--surface); filter: grayscale(0.45) saturate(0.8) brightness(1.14) contrast(0.9) sepia(0.06); }
   .route-embed figcaption { margin-top: 14px; color: var(--muted); font-size: 14px; max-width: 60ch; }
   @media (max-width: 640px) { .route-embed iframe { height: 460px; } }
 
