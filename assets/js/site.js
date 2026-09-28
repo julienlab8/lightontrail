@@ -44,11 +44,11 @@
     });
   })();
 
-  // Countdown to race start (Sunday 4 April 2027, 08:30 local)
+  // Countdown to race start (Sunday 4 April 2027, 07:30 local — L'Intégrale 52 km départ)
   (function () {
     var root = document.getElementById('countdown');
     if (!root) return;
-    var target = new Date(2027, 3, 4, 8, 30, 0).getTime();
+    var target = new Date(2027, 3, 4, 7, 30, 0).getTime();
     var out = {
       d: root.querySelector('[data-cd="d"]'),
       h: root.querySelector('[data-cd="h"]'),

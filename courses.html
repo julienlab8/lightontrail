@@ -4,48 +4,79 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Les Courses · LIGHT ON TRAIL · Trail Pierre-Percée 2027</title>
-<meta name="description" content="Deux parcours autour du Lac de Pierre-Percée : La Grande Boucle 37 km et La Découverte 17 km. Profils altimétriques et traces GPX." />
+<meta name="description" content="Trois parcours autour du Lac de Pierre-Percée : L'Intégrale 52 km, La Grande Boucle 37 km et La Découverte 17 km. Profils altimétriques et traces GPX." />
 <link rel="icon" type="image/svg+xml" href="assets/logo/picto-blanc-orange.svg" />
-<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/site.css?v=2" />
 </head>
 <body>
 
+<!-- ============ TOPBAR / ACCÈS RAPIDE ============ -->
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <nav class="topbar-links" aria-label="Accès rapide">
+      <a href="medias.html#resultats">Résultats</a>
+      <a href="medias.html#photos">Photos</a>
+      <a href="communaute.html#benevole">Devenir bénévole</a>
+      <a href="communaute.html#partenaire">Devenir partenaire</a>
+    </nav>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="index.html" aria-label="LIGHT ON TRAIL accueil">
       <img src="assets/logo/logo-blanc-orange.svg" alt="LIGHT ON TRAIL" width="180" height="30" />
     </a>
     <nav class="nav-links" id="navLinks" aria-label="Navigation principale">
-      <a href="index.html">Accueil</a>
       <div class="nav-item">
-        <a href="evenement.html" class="nav-parent">L'Événement</a>
-        <div class="nav-drop">
-          <a href="evenement.html#esprit">L'esprit LIGHT ON</a>
-          <a href="evenement.html#programme">Programme</a>
-          <a href="evenement.html#lieu">Lieu &amp; accès</a>
-          <a href="evenement.html#eco">Éco-responsabilité</a>
+        <a href="evenement.html" class="nav-parent" aria-current="page">LOT 2027</a>
+        <div class="nav-drop mega">
+          <div class="mega-col">
+            <span class="mega-head">Les Courses</span>
+            <a href="courses.html#integrale">L'Intégrale · 52 km</a>
+            <a href="courses.html#grande-boucle">La Grande Boucle · 37 km</a>
+            <a href="courses.html#decouverte">La Découverte · 17 km</a>
+          </div>
+          <div class="mega-col">
+            <span class="mega-head">L'Événement</span>
+            <a href="evenement.html#univers">L'univers LIGHT ON</a>
+            <a href="evenement.html#programme">Le programme</a>
+            <a href="evenement.html#lieu">Pierre-Percée &amp; le Pays des Lacs</a>
+            <a href="evenement.html#village">Village &amp; animations</a>
+            <a href="actualites.html">Actualités</a>
+          </div>
+          <a class="mega-promo" href="evenement.html">
+            <img src="assets/img/banner.jpg" alt="" loading="lazy" />
+            <span class="mega-promo-cap">
+              <span class="mp-k">Édition 2027</span>
+              <span class="mp-t">Dimanche 4 avril · Lac de Pierre-Percée</span>
+            </span>
+          </a>
         </div>
       </div>
       <div class="nav-item">
-        <a href="courses.html" class="nav-parent" aria-current="page">Les Courses</a>
+        <a href="infos.html" class="nav-parent">Préparer sa venue</a>
         <div class="nav-drop">
-          <a href="courses.html#grande-boucle">La Grande Boucle · 37 km</a>
-          <a href="courses.html#decouverte">La Découverte · 17 km</a>
+          <a href="infos.html#inscriptions">Inscriptions</a>
+          <a href="infos.html#acces">Accès &amp; stationnement</a>
+          <a href="infos.html#hebergements">Hébergements</a>
+          <a href="infos.html#restauration">Restauration</a>
+          <a href="infos.html#conseils">Conseils aux coureurs</a>
+          <a href="infos.html#faq">FAQ</a>
         </div>
       </div>
-      <a href="infos.html">Infos Pratiques</a>
       <div class="nav-item">
-        <a href="medias.html" class="nav-parent">Médias</a>
+        <a href="communaute.html" class="nav-parent">Rejoindre l'aventure</a>
         <div class="nav-drop">
-          <a href="medias.html#film">Le film</a>
-          <a href="medias.html#photos">Photos</a>
-          <a href="medias.html#resultats">Résultats &amp; archives</a>
+          <a href="communaute.html#benevole">Devenir bénévole</a>
+          <a href="communaute.html#partenaire">Devenir partenaire</a>
+          <a href="communaute.html#presse">Presse</a>
+          <a href="communaute.html#contact">Contact</a>
         </div>
       </div>
-      <a href="communaute.html">Communauté</a>
     </nav>
     <div class="nav-cta">
-      <a class="btn btn-ghost" href="communaute.html#contact">Nous écrire</a>
       <a class="btn btn-primary" href="index.html#inscription">S'inscrire</a>
       <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -61,8 +92,37 @@
     <div class="glow a" aria-hidden="true"></div>
     <div class="wrap">
       <div class="crumb"><a href="index.html">Accueil</a> · Les Courses</div>
-      <h1>Deux boucles, <em>un lac.</em></h1>
-      <p class="lede">Choisissez votre distance autour du Lac de Pierre-Percée. La Grande Boucle pour l'engagement, La Découverte pour le plaisir.</p>
+      <h1>À vous <em>de choisir.</em></h1>
+      <p class="lede">Choisissez votre distance autour du Lac de Pierre-Percée. L'Intégrale pour l'ultra, La Grande Boucle pour l'engagement, La Découverte pour le plaisir.</p>
+    </div>
+  </section>
+
+  <!-- ============ INTÉGRALE 52 KM ============ -->
+  <section class="pad" id="integrale">
+    <div class="wrap">
+      <div class="courses-grid" style="grid-template-columns:1.05fr 0.95fr;">
+        <div class="course reveal">
+          <div class="course-img">
+            <span class="course-dist">52 KM</span>
+            <img src="assets/img/course-37.jpg" alt="Coureurs sur une crête forestière en montée au-dessus du Lac de Pierre-Percée" loading="lazy" />
+          </div>
+          <div class="course-body">
+            <h3>L'Intégrale</h3>
+            <p>Le grand format du Trail Pierre-Percée. Le tour complet des reliefs qui dominent le lac : crêtes, forêts profondes et le plus long enchaînement de dénivelé de l'épreuve, pour les coureurs en quête d'ultra-distance.</p>
+            <div class="course-stats">
+              <div class="s"><div class="v mono">52 km</div><div class="lab">Distance</div></div>
+              <div class="s"><div class="v mono">1550 m</div><div class="lab">Dénivelé D+</div></div>
+              <div class="s"><div class="v mono">07:30</div><div class="lab">Départ · dim.</div></div>
+            </div>
+            <p class="mono" style="margin-top:20px;font-size:0.82rem;letter-spacing:0.02em;color:var(--muted);">Trace et profil altimétrique publiés à l'ouverture des inscriptions, le 1er octobre 2026.</p>
+          </div>
+        </div>
+        <div class="reveal" style="align-self:start;">
+          <div class="icard"><h3>Pour qui&nbsp;?</h3><p>Coureurs expérimentés, à l'aise sur la longue distance et le terrain technique. Une préparation spécifique est recommandée : c'est le format le plus exigeant de l'événement.</p></div>
+          <div class="icard" style="margin-top:18px;"><h3>Ravitaillements</h3><p>Ravitaillements liquides et solides répartis sur l'ensemble du parcours, plus le ravito complet à l'arrivée au village. Détails et matériel obligatoire sur la page Infos Pratiques.</p></div>
+          <div class="icard" style="margin-top:18px;"><h3>Départ &amp; barrières</h3><p>Départ à 07:30 depuis le village, en tête des trois courses. Barrières horaires adaptées à la distance, confirmées avant la course.</p></div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -77,7 +137,7 @@
           </div>
           <div class="course-body">
             <h3>La Grande Boucle</h3>
-            <p>En bordure du Lac de Pierre-Percée. Crêtes, forêts profondes et passages techniques pour les coureurs qui cherchent du dénivelé et de l'engagement, du départ au lever du jour jusqu'à la dernière descente sur le village.</p>
+            <p>En bordure du Lac de Pierre-Percée. Crêtes, forêts profondes et passages techniques pour les coureurs qui cherchent du dénivelé et de l'engagement.</p>
             <div class="course-stats">
               <div class="s"><div class="v mono">37 km</div><div class="lab">Distance</div></div>
               <div class="s"><div class="v mono">1250 m</div><div class="lab">Dénivelé D+</div></div>
@@ -100,6 +160,61 @@
         <iframe src="https://www.openrunner.com/embed.html?code=584b4c73686270695971535a39735a2b6d6b5a347278434c67795651584f5269747478426a3148486167343d3a3aa072f02142fb9f0d2b32dd489e41dce6&lang=fr&unit=metric" title="Tracé interactif de La Grande Boucle 37 km sur OpenRunner" loading="lazy"></iframe>
         <figcaption>Tracé interactif et profil altimétrique de La Grande Boucle · 37 km. Téléchargez le fichier GPX depuis OpenRunner.</figcaption>
       </figure>
+      <figure class="elevation reveal">
+        <div class="el-head">
+          <div>
+            <span class="eyebrow">Profil altimétrique</span>
+            <h3>La Grande Boucle · 37 km</h3>
+          </div>
+          <div class="el-stats">
+            <div class="el-stat"><span class="v mono">1028 m</span><span class="l">D+</span></div>
+            <div class="el-stat"><span class="v mono">300 m</span><span class="l">Alt. mini</span></div>
+            <div class="el-stat"><span class="v mono">576 m</span><span class="l">Alt. maxi</span></div>
+          </div>
+        </div>
+        <svg class="el-svg" viewBox="0 -6 1000 342" preserveAspectRatio="none" role="img" aria-label="Profil altimétrique de La Grande Boucle 37 km avec points remarquables : barrage au km 3,5, La Vierge Clarisse et ravitaillement au km 11,1, Col de la Chapelotte et ravitaillement aux km 13,6 et 26,2, Col de la Borne au km 19, Pierre-Percée village au km 34.">
+          <defs>
+            <linearGradient id="elFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.42"/>
+              <stop offset="100%" stop-color="var(--accent)" stop-opacity="0.02"/>
+            </linearGradient>
+            <symbol id="ic-dam" viewBox="0 0 24 24"><path d="M16 3 C 9 9, 9 15, 16 21"/><path d="M4 8 c 2 -2 4 -2 6 0"/><path d="M4 13 c 2 -2 4 -2 6 0"/><path d="M4 18 c 2 -2 4 -2 6 0"/></symbol>
+            <symbol id="ic-statue" viewBox="0 0 24 24"><circle cx="12" cy="5" r="2.4"/><path d="M8.5 20 L12 8.5 L15.5 20"/><path d="M6 20.5 H18"/></symbol>
+            <symbol id="ic-mtn" viewBox="0 0 24 24"><path d="M2 19 L8.5 8 L12.5 14.5 L16 9 L22 19 Z"/></symbol>
+            <symbol id="ic-drop" viewBox="0 0 24 24"><path d="M12 3 C12 3 5 11 5 15 a7 7 0 0 0 14 0 C19 11 12 3 12 3 Z"/></symbol>
+            <symbol id="ic-castle" viewBox="0 0 24 24"><path d="M5 21 V10 H7 V7 H10 V10 H14 V7 H17 V10 H19 V21 Z"/><path d="M11 21 V16 H13 V21"/></symbol>
+          </defs>
+          <line class="el-grid" x1="60" y1="287.00" x2="984" y2="287.00"/><text class="el-yl" x="50" y="291.00" text-anchor="end">300 m</text>
+          <line class="el-grid" x1="60" y1="212.80" x2="984" y2="212.80"/><text class="el-yl" x="50" y="216.80" text-anchor="end">400 m</text>
+          <line class="el-grid" x1="60" y1="138.60" x2="984" y2="138.60"/><text class="el-yl" x="50" y="142.60" text-anchor="end">500 m</text>
+          <line class="el-grid" x1="60" y1="64.40" x2="984" y2="64.40"/><text class="el-yl" x="50" y="68.40" text-anchor="end">600 m</text>
+          
+          <path class="el-area" d="M 60.00,300 L 60.00,287.00 L 84.87,261.03 L 109.74,246.19 L 134.62,242.48 L 159.49,243.96 L 184.36,212.80 L 209.23,174.22 L 234.10,212.80 L 258.98,157.15 L 283.85,209.09 L 308.72,153.44 L 333.59,150.47 L 358.47,199.44 L 383.34,144.54 L 408.21,178.67 L 433.08,129.70 L 457.95,181.64 L 482.83,114.86 L 507.70,98.53 L 532.57,82.21 L 557.44,162.34 L 582.31,229.12 L 607.19,260.29 L 632.06,183.12 L 656.93,243.96 L 681.80,166.80 L 706.68,178.67 L 731.55,135.63 L 756.42,194.99 L 781.29,132.66 L 806.16,187.57 L 831.04,135.63 L 855.91,178.67 L 880.78,162.34 L 905.65,209.09 L 930.52,249.90 L 955.40,268.45 L 980.27,283.29 L 984.00,287.00 L 984.00,300 Z"/>
+          <path class="el-line" d="M 60.00,287.00 L 84.87,261.03 L 109.74,246.19 L 134.62,242.48 L 159.49,243.96 L 184.36,212.80 L 209.23,174.22 L 234.10,212.80 L 258.98,157.15 L 283.85,209.09 L 308.72,153.44 L 333.59,150.47 L 358.47,199.44 L 383.34,144.54 L 408.21,178.67 L 433.08,129.70 L 457.95,181.64 L 482.83,114.86 L 507.70,98.53 L 532.57,82.21 L 557.44,162.34 L 582.31,229.12 L 607.19,260.29 L 632.06,183.12 L 656.93,243.96 L 681.80,166.80 L 706.68,178.67 L 731.55,135.63 L 756.42,194.99 L 781.29,132.66 L 806.16,187.57 L 831.04,135.63 L 855.91,178.67 L 880.78,162.34 L 905.65,209.09 L 930.52,249.90 L 955.40,268.45 L 980.27,283.29 L 984.00,287.00"/>
+          <line class="el-dash" x1="147.05" y1="8" x2="147.05" y2="300"/><circle class="el-pt" cx="147.05" cy="243.22" r="5"/><use class="el-ic" href="#ic-dam" x="131.05" y="203.22" width="32" height="32"/>
+          <line class="el-dash" x1="336.08" y1="8" x2="336.08" y2="300"/><circle class="el-pt" cx="336.08" cy="155.37" r="5"/><use class="el-ic" href="#ic-statue" x="304.08" y="117.37" width="30" height="30"/><use class="el-ic" href="#ic-drop" x="340.08" y="125.37" width="22" height="22"/>
+          <line class="el-dash" x1="398.26" y1="8" x2="398.26" y2="300"/><circle class="el-pt" cx="398.26" cy="165.02" r="5"/><use class="el-ic" href="#ic-mtn" x="366.26" y="127.02" width="30" height="30"/><use class="el-ic" href="#ic-drop" x="402.26" y="135.02" width="22" height="22"/>
+          <line class="el-dash" x1="532.57" y1="8" x2="532.57" y2="300"/><circle class="el-pt" cx="532.57" cy="82.21" r="5"/><use class="el-ic" href="#ic-mtn" x="517.57" y="44.21" width="30" height="30"/>
+          <line class="el-dash" x1="711.65" y1="8" x2="711.65" y2="300"/><circle class="el-pt" cx="711.65" cy="170.06" r="5"/><use class="el-ic" href="#ic-mtn" x="679.65" y="132.06" width="30" height="30"/><use class="el-ic" href="#ic-drop" x="715.65" y="140.06" width="22" height="22"/>
+          <line class="el-dash" x1="905.65" y1="8" x2="905.65" y2="300"/><circle class="el-pt" cx="905.65" cy="209.09" r="5"/><use class="el-ic" href="#ic-castle" x="889.65" y="169.09" width="32" height="32"/>
+          <text class="el-lbl" x="147.05" y="18" text-anchor="middle">Barrage</text><text class="el-lkmc" x="147.05" y="31" text-anchor="middle">km 3,5</text>
+          <text class="el-lbl" x="330.00" y="44" text-anchor="end">La Vierge Clarisse</text><text class="el-lkmc" x="330.00" y="57" text-anchor="end">km 11,1</text>
+          <text class="el-lbl" x="392.00" y="18" text-anchor="end">Col de la Chapelotte</text><text class="el-lkmc" x="392.00" y="31" text-anchor="end">km 13,6</text>
+          <text class="el-lbl" x="532.57" y="15" text-anchor="middle">Col de la Borne</text><text class="el-lkmc" x="532.57" y="28" text-anchor="middle">km 19</text>
+          <text class="el-lbl" x="711.65" y="18" text-anchor="middle">Col de la Chapelotte</text><text class="el-lkmc" x="711.65" y="31" text-anchor="middle">km 26,2</text>
+          <text class="el-lbl" x="905.65" y="44" text-anchor="middle">Pierre-Percée</text><text class="el-lkmc" x="905.65" y="57" text-anchor="middle">km 34</text>
+          
+          <text class="el-xl" x="60.00" y="322" text-anchor="middle">0 km</text><text class="el-xl" x="184.36" y="322" text-anchor="middle">5 km</text><text class="el-xl" x="308.72" y="322" text-anchor="middle">10 km</text><text class="el-xl" x="433.08" y="322" text-anchor="middle">15 km</text><text class="el-xl" x="557.44" y="322" text-anchor="middle">20 km</text><text class="el-xl" x="681.80" y="322" text-anchor="middle">25 km</text><text class="el-xl" x="806.16" y="322" text-anchor="middle">30 km</text><text class="el-xl" x="930.52" y="322" text-anchor="middle">35 km</text><text class="el-xl" x="980.27" y="322" text-anchor="middle">37</text>
+        </svg>
+        <ul class="el-legend">
+          <li><span class="el-lemo"><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-dam"/></svg></span><span class="el-lkm mono">km 3,5</span> Barrage</li>
+          <li><span class="el-lemo"><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-statue"/></svg><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-drop"/></svg></span><span class="el-lkm mono">km 11,1</span> La Vierge Clarisse · ravitaillement</li>
+          <li><span class="el-lemo"><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-mtn"/></svg><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-drop"/></svg></span><span class="el-lkm mono">km 13,6 &amp; 26,2</span> Col de la Chapelotte · ravitaillement</li>
+          <li><span class="el-lemo"><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-mtn"/></svg></span><span class="el-lkm mono">km 19</span> Col de la Borne</li>
+          <li><span class="el-lemo"><svg class="el-lic" viewBox="0 0 24 24"><use class="el-ic" href="#ic-castle"/></svg></span><span class="el-lkm mono">km 34</span> Pierre-Percée village</li>
+        </ul>
+        <figcaption>Profil indicatif de La Grande Boucle · 37 km. Le tracé et le fichier GPX de référence sont disponibles sur OpenRunner.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -117,7 +232,7 @@
             <p>Un format accessible pour entrer dans le trail sans renoncer aux paysages. Le bord du lac, quelques montées franches mais raisonnables : idéal pour une première course nature ou un retour en douceur.</p>
             <div class="course-stats">
               <div class="s"><div class="v mono">17 km</div><div class="lab">Distance</div></div>
-              <div class="s"><div class="v mono">430 m</div><div class="lab">Dénivelé D+</div></div>
+              <div class="s"><div class="v mono">530 m</div><div class="lab">Dénivelé D+</div></div>
               <div class="s"><div class="v mono">09:30</div><div class="lab">Départ · dim.</div></div>
             </div>
             <div class="hero-actions" style="margin-top:24px;">
@@ -161,15 +276,16 @@
         <a class="brand" href="index.html">
           <img src="assets/logo/logo-blanc-orange.svg" alt="LIGHT ON TRAIL" width="200" height="33" style="height:52px;" />
         </a>
-        <p>Des événements d'endurance dans le Grand Est. Trail, course et triathlon, pensés avec et pour les coureurs.</p>
+        <p>LIGHT ON TRAIL est l'organisateur du Trail Pierre-Percée : un événement d'endurance en pleine nature, au bord du Lac de Pierre-Percée dans le Grand Est. Trois parcours, un cadre préservé et une communauté qui court pour le plaisir.</p>
       </div>
-      <div class="foot-col">
+            <div class="foot-col">
         <h4>Naviguer</h4>
         <a href="evenement.html">L'Événement</a>
         <a href="courses.html">Les Courses</a>
-        <a href="infos.html">Infos Pratiques</a>
-        <a href="medias.html">Médias</a>
-        <a href="communaute.html">Communauté</a>
+        <a href="infos.html">Préparer sa venue</a>
+        <a href="actualites.html">Actualités</a>
+        <a href="communaute.html">Rejoindre l'aventure</a>
+        <a href="medias.html">Résultats &amp; photos</a>
       </div>
       <div class="foot-col">
         <h4>Contact</h4>
