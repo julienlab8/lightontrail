@@ -993,3 +993,8 @@
   /* point final des titres : un carré orange (dans la DA, comme les repères) */
   .sq { display: inline-block; width: .19em; height: .19em; margin-left: .07em; background: var(--accent);
     color: transparent; overflow: hidden; line-height: 0; vertical-align: baseline; }
+
+  /* logo d'en-tête : fichier recadré (sans marges internes), un peu plus grand, un peu plus près du bord */
+  .nav .brand img { height: 46px; width: auto; }
+  header.nav > .wrap { padding-inline: clamp(20px, 3vw, 40px); }
+  @media (max-width: 520px) { .nav .brand img { height: 36px; } }
