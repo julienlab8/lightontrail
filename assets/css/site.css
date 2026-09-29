@@ -604,3 +604,9 @@
     .sec-split.flip .sec-photo { order: 0; }
     .sec-photo { aspect-ratio: 16/10; }
   }
+
+  /* titres du méga-menu cliquables */
+  .nav-drop.mega a.mega-head { display: block; color: var(--accent); background: none; }
+  .nav-drop.mega a.mega-head:hover { color: var(--text); background: none; }
+  /* la vidéo ne capte pas le clic (iPhone) : c'est le lien YouTube qui le reçoit */
+  .hero-visual video { pointer-events: none; }
