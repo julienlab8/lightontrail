@@ -989,3 +989,7 @@
   .page-kicker { display: inline-block; margin-bottom: 20px; font-size: 13px; letter-spacing: .14em; }
   .page-kicker::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 10px; background: var(--accent); vertical-align: 1px; }
   .page-hero.has-img .page-kicker { text-shadow: 0 1px 14px rgba(0,0,0,.7); }
+
+  /* point final des titres : un carré orange (dans la DA, comme les repères) */
+  .sq { display: inline-block; width: .19em; height: .19em; margin-left: .07em; background: var(--accent);
+    color: transparent; overflow: hidden; line-height: 0; vertical-align: baseline; }
