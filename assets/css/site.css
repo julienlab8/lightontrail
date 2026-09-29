@@ -970,3 +970,8 @@
   @media (max-width: 520px) { .nav-links { top: 64px !important; height: calc(100dvh - 64px); } }
   .h-hero.cut .inner { padding-bottom: calc(clamp(32px, 6vh, 72px) + 4.5vw); }
   .page-hero.cut { padding-bottom: calc(clamp(40px, 6vw, 80px) + 4.5vw); }
+  /* fiches parcours : le badge orange devient le coin haut-gauche du cadre,
+     le coin blanc bas-droit lui répond en diagonale (comme le picto) */
+  .course-img.brk-in::before { display: none !important; }
+  .course-img .course-dist { top: 20px; left: 20px; z-index: 4; }
+  .course-img.brk-in::after { inset: auto 20px 20px auto; width: 40px; height: 40px; }
