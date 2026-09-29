@@ -998,3 +998,7 @@
   .nav .brand img { height: 46px; width: auto; }
   header.nav > .wrap { padding-inline: clamp(20px, 3vw, 40px); }
   @media (max-width: 520px) { .nav .brand img { height: 36px; } }
+
+  /* bouton S'inscrire de l'en-tête : même hauteur que l'éclair (le « N ») du logo, haut et bas alignés */
+  .nav-cta .btn-primary { height: calc(46px * 920 / 940); padding: 0 22px; line-height: 1; }
+  @media (max-width: 520px) { .nav-cta .btn-primary { height: calc(36px * 920 / 940); padding: 0 14px; font-size: 12px; } }
