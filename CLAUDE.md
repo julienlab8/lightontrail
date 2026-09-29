@@ -21,6 +21,14 @@ Aperçu local : `python3 -m http.server 8080` à la racine, puis http://localhos
 - Fichiers source : `~/Documents/Documents/MAZE Planner/LIGHT ON/2 - Light On/DA/` (SVG, PNG, AI).
 - Pas de crédit vidéaste à afficher pour les vidéos.
 
+## Direction visuelle du site (refonte du 30/09/2026)
+
+- Style « éditorial sombre » : angles droits, pas de cartes arrondies ni de halos, pas d'animations de fondu au défilement. Blocs séparés par des filets avec un trait orange d'accent.
+- Signatures de marque (à utiliser avec parcimonie) : crochets du picto (`.brk`, `.brk-in`), coupe en biais dans l'angle de l'éclair (`.cut`, une fois par page), repères GPS (`.geo`), éclair dans les boutons S'inscrire (`.btn-go`).
+- Le double menu (barre d'accès rapide + menu principal) est à conserver tel quel.
+- Mettre en orange un mot clé des grands titres avec `<em>` (jamais d'italique).
+- Les styles de la refonte sont à la fin de `assets/css/site.css` ; changer le `?v=` des liens CSS/JS après chaque modification.
+
 ## Ton rédactionnel LIGHT ON
 
 LIGHT ON crée des événements sportifs outdoor : triathlon, trail, running.
