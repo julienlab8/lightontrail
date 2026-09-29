@@ -871,3 +871,16 @@
   .course-stats .v { color: var(--accent); }
   .btn-gpx { background: var(--accent); color: var(--on-accent); border: 0; }
   .btn-gpx:hover { background: var(--text); color: var(--bg); }
+
+  /* compte à rebours (accueil) */
+  .count-band { background: var(--bg); border-bottom: 1px solid var(--line-2); }
+  .count-inner { padding-block: clamp(28px, 4vw, 44px); gap: 28px 48px; }
+  .count-lab { font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: .12em; }
+  .count-lab b { font-size: clamp(20px, 2.4vw, 32px); margin-top: 10px; }
+  .count-units { gap: 0; }
+  .count-units .cu { background: none; border: 0; border-left: 1px solid var(--line-2); border-radius: 0; padding: 0 clamp(18px, 3vw, 44px); min-width: 0; text-align: left; }
+  .count-units .cu:first-child { border-left: 0; padding-left: 0; }
+  .cu .cn { font-family: var(--display); font-weight: 700; font-size: clamp(36px, 5vw, 72px); line-height: 1; color: var(--text); font-variant-numeric: tabular-nums; }
+  .count-units .cu:first-child .cn { color: var(--accent); }
+  .cu .cl { display: block; margin-top: 10px; font-family: var(--display); font-size: 11px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
+  @media (max-width: 760px) { .count-inner { justify-content: flex-start; text-align: left; } .count-units .cu { padding: 0 14px; } .cu .cn { font-size: 32px; } }
