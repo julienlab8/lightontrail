@@ -883,7 +883,7 @@
   .cu .cn { font-family: var(--display); font-weight: 700; font-size: clamp(36px, 5vw, 72px); line-height: 1; color: var(--text); font-variant-numeric: tabular-nums; }
   .count-units .cu:first-child .cn { color: var(--accent); }
   .cu .cl { display: block; margin-top: 10px; font-family: var(--display); font-size: 11px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
-  @media (max-width: 760px) { .count-inner { justify-content: flex-start; text-align: left; } .count-units .cu { padding: 0 14px; } .cu .cn { font-size: 32px; } }
+  @media (max-width: 760px) { .count-inner { justify-content: flex-start; text-align: left; } .count-units .cu { padding: 12px 10px; } .count-units .cu.brk { padding: 12px 14px 12px 12px; margin-right: 4px; } .cu .cn { font-size: 30px; } .cu .cl { font-size: 10px; letter-spacing: .08em; } }
 
   /* ============ VARIÉTÉ DE MISES EN PAGE (pages d'infos) ============ */
   /* colonnes gardées plus longtemps avant de s'empiler */
@@ -921,8 +921,9 @@
   .brk::before, .brk::after { content: ""; position: absolute; width: 18px; height: 18px; border: 0 solid var(--accent); pointer-events: none; }
   .brk::before { top: 0; left: 0; border-top-width: 3px; border-left-width: 3px; }
   .brk::after { bottom: 0; right: 0; border-bottom-width: 3px; border-right-width: 3px; }
-  .count-units .cu.brk { padding: 12px 22px 12px 18px; border-left: 0; }
-  .count-units .cu.brk + .cu { border-left: 0; }
+  .count-units .cu.brk { padding: 12px 22px 12px 18px; border-left: 0; margin-right: clamp(18px, 3vw, 44px); }
+  /* toutes les unités sur la même ligne de base que celle encadrée */
+  .count-units .cu { padding-block: 12px; }
   /* version incrustée dans une image */
   .brk-in { position: relative; }
   .brk-in::before, .brk-in::after { content: ""; display: block !important; position: absolute; z-index: 3; width: 34px; height: 34px; border: 0 solid #fff; pointer-events: none; background: none !important; }
