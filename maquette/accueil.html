@@ -99,7 +99,8 @@
 
   /* ---------- grande image ---------- */
   .band { position: relative; height: 88vh; min-height: 520px; overflow: hidden; }
-  .band img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .band video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  h1 em, h2 em, h3 em { font-style: normal; color: var(--orange); }
   .band::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(35,35,35,0) 40%, rgba(35,35,35,.85) 100%); }
   .band .inner { position: absolute; inset: auto 0 0; z-index: 2; padding-bottom: clamp(32px, 6vw, 72px); display: flex; justify-content: space-between; align-items: flex-end; gap: 32px; flex-wrap: wrap; }
   .band h2 { font-size: clamp(34px, 6vw, 96px); max-width: 12ch; }
@@ -137,9 +138,11 @@
   @media (max-width: 700px) { .news .row { grid-template-columns: 1fr; gap: 8px; } }
 
   /* ---------- partenaires ---------- */
-  .partners { padding-block: 56px; border-top: 1px solid var(--rule); }
+  .partners { padding-block: 56px; background: var(--orange); color: var(--noir); }
+  .partners .label { color: var(--noir); }
   .partners .logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 36px 48px; margin-top: 28px; }
-  .partners img { height: 38px; width: auto; filter: brightness(0) invert(1); opacity: .75; transition: opacity .2s; }
+  .partners img { height: 38px; width: auto; filter: brightness(0) invert(1); opacity: 1; transition: transform .2s; }
+  .partners a:hover img { transform: scale(1.06); }
   .partners a:hover img { opacity: 1; }
 
   /* ---------- appel final ---------- */
@@ -163,25 +166,10 @@
   footer .end { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--rule); font-size: 13px; color: var(--soft); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   @media (max-width: 760px) { footer .g { grid-template-columns: 1fr 1fr; } footer .g > div:first-child { grid-column: 1 / -1; } }
 
-  /* ---------- direction B : alternance noir / blanc ---------- */
-  body.dir-b .alt { --fg: var(--noir); --soft: rgba(35,35,35,.66); --rule: rgba(35,35,35,.16); background: var(--blanc); color: var(--noir); }
-  body.dir-b .alt .partners img, body.dir-b .partners.alt img { filter: brightness(0); }
-  .logo-dark { display: none; }
-
-  /* ---------- sélecteur de maquette ---------- */
-  .switch { position: fixed; left: 16px; bottom: 16px; z-index: 50; display: flex; background: var(--blanc); color: var(--noir); font-family: var(--display); font-size: 11px; letter-spacing: .06em; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
-  .switch button { all: unset; cursor: pointer; padding: 12px 14px; }
-  .switch button[aria-pressed="true"] { background: var(--orange); }
-  .switch span { padding: 12px 14px; background: var(--noir); color: var(--blanc); }
 </style>
 </head>
 <body>
 
-<div class="switch" role="group" aria-label="Choisir la direction">
-  <span>MAQUETTE</span>
-  <button type="button" data-dir="a" aria-pressed="true">A · SOMBRE</button>
-  <button type="button" data-dir="b" aria-pressed="false">B · NOIR &amp; BLANC</button>
-</div>
 
 <header class="top" id="top">
   <div class="wrap">
@@ -212,16 +200,16 @@
     </div>
   </section>
 
-  <section class="manifeste alt">
+  <section class="manifeste">
     <div class="wrap">
       <p>17, 37 ou 54 KM&nbsp;: trois façons de découvrir <span class="nw">Pierre-Percée</span>. Une seule règle&nbsp;: <em>en profiter.</em></p>
     </div>
     <svg class="bolt" viewBox="500 220 380 940" aria-hidden="true"><polygon fill="#ed5f3e" points="861.4 229.3 820.4 229.3 737.01 650.75 638.85 525.16 523.33 1149.33 564.19 1149.33 659.9 627.39 758.19 753.11 861.4 229.3"/></svg>
   </section>
 
-  <section class="courses alt">
+  <section class="courses">
     <div class="wrap">
-      <div class="sec-top"><h2>Les courses</h2><a href="../courses.html">Traces, profils et détails →</a></div>
+      <div class="sec-top"><h2>Les courses<em>***</em></h2><a href="../courses.html">Traces, profils et détails →</a></div>
 
       <a class="race" href="../courses.html#trail-17">
         <div class="num">17<small>KM</small><span class="star">*</span></div>
@@ -256,9 +244,9 @@
   </section>
 
   <section class="band">
-    <img src="../assets/img/lieu-lac.jpg" alt="Le Lac de Pierre-Percée et ses forêts vus du ciel" loading="lazy" />
+    <video autoplay muted loop playsinline preload="metadata" poster="lac-drone.jpg" aria-label="Le Lac de Pierre-Percée et ses forêts vus du ciel"><source src="lac-drone.mp4" type="video/mp4" /></video>
     <div class="inner wrap">
-      <h2>Le goût de l'effort, grandeur nature.</h2>
+      <h2>Le goût de l'<em>effort</em>, grandeur <em>nature</em>.</h2>
       <p>Le plus grand lac de Lorraine, son massif forestier et un seul village de départ, à Celles-sur-Plaine.</p>
     </div>
   </section>
@@ -268,7 +256,7 @@
       <video autoplay muted loop playsinline preload="metadata" poster="../assets/video/nature-poster.jpg"><source src="../assets/video/nature.mp4" type="video/mp4" /></video>
       <div>
         <div class="label">L'événement</div>
-        <h2 style="margin-top:18px;">La course, et tout ce qu'il y a autour.</h2>
+        <h2 style="margin-top:18px;">La course, et tout ce qu'il y a <em>autour</em>.</h2>
         <p class="intro">Dossards la veille, courses le dimanche, village ouvert tout le week-end. Les supporters sont les bienvenus (leurs encouragements aussi).</p>
         <div class="list">
           <a href="../evenement.html#programme"><span class="n">01</span><div><h3>Le programme</h3><p>Samedi 3 avril, retrait des dossards. Dimanche 4 avril, départs à 7h30, 8h30 et 9h30, podiums à midi.</p></div><span class="arr">→</span></a>
@@ -293,15 +281,6 @@
     </div>
   </section>
 
-  <section class="news alt">
-    <div class="wrap">
-      <div class="sec-top"><h2>Quoi de neuf&nbsp;?</h2><a href="../actualites.html">Toutes les actualités →</a></div>
-      <div class="row"><div class="d">29 septembre</div><div><h3>Les inscriptions sont ouvertes</h3><p>Le 17 KM*, le 37 KM** et le 54 KM*** vous attendent. Les dossards sont limités&nbsp;: ne traînez pas trop.</p></div><div>→</div></div>
-      <div class="row"><div class="d">4 avril 2027</div><div><h3>Cap sur l'édition 2027</h3><p>Rendez-vous au bord du lac, avec un village ouvert dès le samedi.</p></div><div>→</div></div>
-      <div class="row"><div class="d">Toute l'année</div><div><h3>Rejoindre le LIGHT ON Crew</h3><p>Ravitaillements, balisage, village&nbsp;: l'événement se construit avec ses bénévoles.</p></div><div>→</div></div>
-    </div>
-  </section>
-
   <section class="partners">
     <div class="wrap">
       <div class="label">Ils nous soutiennent</div>
@@ -315,6 +294,16 @@
       </div>
     </div>
   </section>
+
+  <section class="news">
+    <div class="wrap">
+      <div class="sec-top"><h2>Quoi de neuf<em>&nbsp;?</em></h2><a href="../actualites.html">Toutes les actualités →</a></div>
+      <div class="row"><div class="d">29 septembre</div><div><h3>Les inscriptions sont ouvertes</h3><p>Le 17 KM*, le 37 KM** et le 54 KM*** vous attendent. Les dossards sont limités&nbsp;: ne traînez pas trop.</p></div><div>→</div></div>
+      <div class="row"><div class="d">4 avril 2027</div><div><h3>Cap sur l'édition 2027</h3><p>Rendez-vous au bord du lac, avec un village ouvert dès le samedi.</p></div><div>→</div></div>
+      <div class="row"><div class="d">Toute l'année</div><div><h3>Rejoindre le LIGHT ON Crew</h3><p>Ravitaillements, balisage, village&nbsp;: l'événement se construit avec ses bénévoles.</p></div><div>→</div></div>
+    </div>
+  </section>
+
 
   <section class="cta">
     <div class="wrap">
@@ -344,12 +333,6 @@
   var bar = document.getElementById('top');
   function onScroll() { bar.classList.toggle('solid', window.scrollY > 40); }
   window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
-  document.querySelectorAll('.switch button').forEach(function (b) {
-    b.addEventListener('click', function () {
-      document.body.classList.toggle('dir-b', b.dataset.dir === 'b');
-      document.querySelectorAll('.switch button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
-    });
-  });
 </script>
 </body>
 </html>
