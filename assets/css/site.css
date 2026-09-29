@@ -984,3 +984,8 @@
     .nav-links .nav-quick a::before { content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 8px; background: var(--accent); vertical-align: 1px; }
     .nav-links .nav-quick a:hover { border-color: var(--accent); }
   }
+
+  /* sur-titre des en-têtes de page (fait écho au menu) */
+  .page-kicker { display: inline-block; margin-bottom: 20px; font-size: 13px; letter-spacing: .14em; }
+  .page-kicker::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 10px; background: var(--accent); vertical-align: 1px; }
+  .page-hero.has-img .page-kicker { text-shadow: 0 1px 14px rgba(0,0,0,.7); }
