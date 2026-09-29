@@ -912,3 +912,61 @@
   .faq-item[open] summary::after { transform: rotate(45deg); }
   .faq-item summary:hover { color: var(--accent); }
   .faq-item p { margin: 0; padding: 0 0 28px; max-width: 70ch; color: var(--muted); font-size: 16.5px; line-height: 1.7; }
+
+/* =====================================================================
+   SIGNATURES LIGHT ON : crochets, biais, repères GPS, micro-détails
+   ===================================================================== */
+  /* 1 · crochets du picto : deux coins [ ] autour d'un élément */
+  .brk { position: relative; padding: 14px 18px; }
+  .brk::before, .brk::after { content: ""; position: absolute; width: 18px; height: 18px; border: 0 solid var(--accent); pointer-events: none; }
+  .brk::before { top: 0; left: 0; border-top-width: 3px; border-left-width: 3px; }
+  .brk::after { bottom: 0; right: 0; border-bottom-width: 3px; border-right-width: 3px; }
+  .count-units .cu.brk { padding: 12px 22px 12px 18px; border-left: 0; }
+  .count-units .cu.brk + .cu { border-left: 0; }
+  /* version incrustée dans une image */
+  .brk-in { position: relative; }
+  .brk-in::before, .brk-in::after { content: ""; display: block !important; position: absolute; z-index: 3; width: 34px; height: 34px; border: 0 solid #fff; pointer-events: none; background: none !important; }
+  .brk-in::before { top: 16px; left: 16px; border-top-width: 3px; border-left-width: 3px; }
+  .brk-in::after { inset: auto 16px 16px auto; border-bottom-width: 3px; border-right-width: 3px; }
+
+  /* 2 · coupe en biais, même angle que l'éclair du logo (avec parcimonie) */
+  .cut { clip-path: polygon(0 0, 100% 0, 100% calc(100% - 4.5vw), 0 100%); }
+
+  /* 5 · repères GPS */
+  .geo { position: absolute; z-index: 3; top: 22px; right: var(--gutter); font-family: var(--display); font-size: 10.5px; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.72); }
+  .geo::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 10px; background: var(--accent); vertical-align: 1px; }
+  @media (max-width: 600px) { .geo { font-size: 9px; letter-spacing: .1em; right: auto; left: var(--gutter); top: 16px; } }
+
+  /* 7 · léger grain unifié sur les grandes images (sans toucher à la retouche LIGHT ON) */
+  .h-hero::before, .h-band::before, .page-hero.has-img::before, .h-cta::after {
+    content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; opacity: .09; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+  /* 8 · micro-détails au survol */
+  /* soulignement qui se dessine */
+  .sec-top a, .h-race .go, footer .foot-col a, .crumb a, .partner-strip-link {
+    background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .35s var(--ease), color .2s; }
+  .sec-top a:hover, .h-race:hover .go, footer .foot-col a:hover, .crumb a:hover { background-size: 100% 1px; }
+  /* éclair qui apparaît dans les boutons S'inscrire */
+  .btn-go::before { content: ""; width: 0; height: 18px; margin-right: -10px; background: url("../logo/eclair.svg") center / contain no-repeat;
+    filter: brightness(0) saturate(100%) invert(12%); transition: width .25s var(--ease), margin .25s var(--ease); }
+  .btn-go:hover::before { width: 9px; margin-right: 0; }
+  .btn-go .ico { transition: transform .25s var(--ease); }
+  .btn-go:hover .ico { transform: translateX(3px); }
+
+  /* 6 · menu mobile plein écran */
+  @media (max-width: 1040px) {
+    .nav-links { position: fixed !important; top: 70px !important; left: 0; right: 0; bottom: 0; max-height: none !important; height: calc(100dvh - 70px);
+      padding: 28px var(--gutter) 120px !important; background: var(--bg) !important; border: 0 !important; gap: 0 !important; overflow-y: auto;
+      transform: translateY(-12px); }
+    .nav-links.open { background: var(--bg) url("../logo/eclair.svg") right var(--gutter) bottom 32px / 40px 104px no-repeat !important; }
+    .nav-links > a, .nav-links .nav-parent { font-family: var(--display) !important; font-weight: 700; font-size: clamp(24px, 6.4vw, 38px) !important; color: var(--text) !important; padding: 14px 0 !important; line-height: 1.05; border-top: 1px solid var(--line-2); }
+    .nav-links .nav-item:first-child .nav-parent { border-top: 0; }
+    .nav-drop { border-left: 0 !important; padding: 0 0 14px !important; margin: 0 !important; }
+    .nav-drop a { font-size: 14px !important; padding: 7px 0 !important; color: var(--muted) !important; }
+    .nav-drop a:hover { color: var(--accent) !important; }
+    .nav-drop.mega .mega-head { color: var(--accent) !important; font-size: 11px !important; padding: 12px 0 4px !important; }
+  }
+  @media (max-width: 520px) { .nav-links { top: 64px !important; height: calc(100dvh - 64px); } }
+  .h-hero.cut .inner { padding-bottom: calc(clamp(32px, 6vh, 72px) + 4.5vw); }
+  .page-hero.cut { padding-bottom: calc(clamp(40px, 6vw, 80px) + 4.5vw); }
