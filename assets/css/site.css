@@ -1009,8 +1009,9 @@
 
   /* manifeste sur téléphone : l'éclair entier, sous le texte, à droite (comme sur ordinateur) */
   @media (max-width: 700px) {
-    .h-manifeste { padding-bottom: 280px; }
-    .h-manifeste .bolt { top: auto; bottom: 36px; right: 10vw; transform: none; height: 230px; opacity: 1; }
+    .h-manifeste { padding-block: 72px; }
+    .h-manifeste p { font-size: clamp(21px, 6vw, 30px); max-width: calc(100% - 84px); }
+    .h-manifeste .bolt { top: 50%; bottom: auto; right: var(--gutter); transform: translateY(-50%); height: calc(100% - 110px); opacity: 1; }
   }
 
   /* confort : cibles tactiles assez grandes et ancres qui ne passent pas sous l'en-tête */
