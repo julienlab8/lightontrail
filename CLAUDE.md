@@ -13,6 +13,14 @@ Aperçu local : `python3 -m http.server 8080` à la racine, puis http://localhos
 - Contact : hello@lightontri.com est volontaire (seule adresse pour le moment).
 - Le menu et le pied de page sont dupliqués dans chaque page HTML : toute modification doit être répétée sur toutes les pages.
 
+## DA LIGHT ON (pas encore de charte complète)
+
+- Couleurs : noir `#232323`, orange `#ED5F3E`, blanc `#FFFFFF`. La DA est sombre : le clair n'en fait pas partie.
+- Titres : Lemon Milk, bold ou regular selon l'usage, **jamais d'italique**. Textes : Roboto normal, certains mots forts en gras.
+- Logos : toujours préférer les versions bicolores (noir/blanc + orange). Le picto (crochets + éclair) est un élément fort de la marque.
+- Fichiers source : `~/Documents/Documents/MAZE Planner/LIGHT ON/2 - Light On/DA/` (SVG, PNG, AI).
+- Pas de crédit vidéaste à afficher pour les vidéos.
+
 ## Ton rédactionnel LIGHT ON
 
 LIGHT ON crée des événements sportifs outdoor : triathlon, trail, running.
