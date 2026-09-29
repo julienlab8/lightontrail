@@ -1002,3 +1002,7 @@
   /* bouton S'inscrire de l'en-tête : même hauteur que l'éclair (le « N ») du logo, haut et bas alignés */
   .nav-cta .btn-primary { height: calc(46px * 920 / 940); padding: 0 22px; line-height: 1; }
   @media (max-width: 520px) { .nav-cta .btn-primary { height: calc(36px * 920 / 940); padding: 0 14px; font-size: 12px; } }
+  /* boutons de la vidéo d'accueil : même dimension que le bouton de l'en-tête */
+  .h-hero .actions .btn { height: calc(46px * 920 / 940); padding: 0 22px; line-height: 1; }
+  .h-hero .actions .btn-ghost { padding: 0; }
+  @media (max-width: 520px) { .h-hero .actions .btn { height: calc(36px * 920 / 940); padding: 0 14px; font-size: 12px; } .h-hero .actions .btn-ghost { padding: 0; } }
