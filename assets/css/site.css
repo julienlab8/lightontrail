@@ -592,3 +592,15 @@
     .partner-marquee-track img { height: 32px; }
     .partner-marquee-track img[src*="pierre-percee"] { height: 42px; }
   }
+
+  /* sections avec photo (Préparer sa venue) */
+  .sec-split { display: grid; grid-template-columns: 1fr minmax(0, 0.8fr); gap: clamp(28px, 5vw, 64px); align-items: center; }
+  .sec-split.flip .sec-photo { order: -1; }
+  .sec-split .sec-head { margin: 0; }
+  .sec-photo { margin: 0; border-radius: var(--r-card); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 3/2; }
+  .sec-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  @media (max-width: 860px) {
+    .sec-split { grid-template-columns: 1fr; gap: 24px; }
+    .sec-split.flip .sec-photo { order: 0; }
+    .sec-photo { aspect-ratio: 16/10; }
+  }
