@@ -610,3 +610,13 @@
   .nav-drop.mega a.mega-head:hover { color: var(--text); background: none; }
   /* la vidéo ne capte pas le clic (iPhone) : c'est le lien YouTube qui le reçoit */
   .hero-visual video { pointer-events: none; }
+
+  /* cartes entièrement cliquables (lien étiré sur toute la carte) */
+  .icard.has-link { position: relative; transition: transform .3s var(--ease), border-color .3s var(--ease); }
+  .icard.has-link .card-link { color: inherit; }
+  .icard.has-link .card-link::after { content: ""; position: absolute; inset: 0; z-index: 1; border-radius: inherit; }
+  .icard.has-link p a { position: relative; z-index: 2; }
+  .icard.has-link:hover { transform: translateY(-3px); border-color: var(--line-2); }
+  .icard.has-link:hover h3 { color: var(--accent); }
+  .icard.has-link:focus-within { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .card-cta { display: inline-block; margin-top: 18px; font-family: var(--display); text-transform: uppercase; letter-spacing: 0.04em; font-size: 12px; color: var(--accent); }
