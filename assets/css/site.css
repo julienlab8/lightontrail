@@ -826,13 +826,11 @@
   .h-partners .track img { height: 42px; width: auto; filter: brightness(0) invert(1); }
   .h-partners .track img.pp { height: 56px; }
   @media (max-width: 640px) {
-    .h-partners { flex-direction: column; }
-    .h-partners .tag { padding: 14px var(--gutter); font-size: 12px; }
-    .h-partners .tag br { display: none; }
-    .h-partners .tag::after { display: none; }
-    .h-partners .ticker { padding: 28px 0; }
-    .h-partners .track { gap: 52px; }
-    .h-partners .track img { height: 32px; } .h-partners .track img.pp { height: 42px; }
+    .h-partners .tag { padding: 0 8px 0 var(--gutter); font-size: 10px; letter-spacing: .05em; }
+    .h-partners .tag::after { right: -22px; width: 24px; }
+    .h-partners .ticker { padding: 24px 0 24px 34px; }
+    .h-partners .track { gap: 44px; }
+    .h-partners .track img { height: 28px; } .h-partners .track img.pp { height: 38px; }
   }
   @media (prefers-reduced-motion: reduce) { .h-partners .track { animation: none; flex-wrap: wrap; } }
 
