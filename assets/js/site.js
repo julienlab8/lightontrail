@@ -23,6 +23,14 @@
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
       toggle.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
     }
+    // Raccourcis de la barre du haut, repris en tête du menu mobile
+    var quick = document.querySelector('.topbar-links');
+    if (quick) {
+      var box = document.createElement('div');
+      box.className = 'nav-quick';
+      quick.querySelectorAll('a').forEach(function (a) { box.appendChild(a.cloneNode(true)); });
+      links.insertBefore(box, links.firstChild);
+    }
     toggle.addEventListener('click', function () {
       setOpen(!links.classList.contains('open'));
     });
