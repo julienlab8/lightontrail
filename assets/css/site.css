@@ -625,3 +625,15 @@
   .reglement-card { display: flex; align-items: center; justify-content: space-between; gap: 24px 40px; flex-wrap: wrap; }
   .reglement-card > div { max-width: 60ch; }
   .reglement-card .eyebrow { display: block; margin-bottom: 10px; }
+
+  /* page Règlement : texte long, sobre */
+  .prose { max-width: 760px; }
+  .prose h2 { font-size: clamp(20px, 2.4vw, 26px); margin: 48px 0 14px; }
+  .prose h2:first-child { margin-top: 0; }
+  .prose h3 { font-size: 17px; margin: 28px 0 10px; color: var(--accent); }
+  .prose p, .prose li { color: var(--muted); font-size: 16px; line-height: 1.7; }
+  .prose p { margin: 0 0 14px; }
+  .prose strong { color: var(--text); }
+  .prose ul { margin: 0 0 16px; padding-left: 20px; }
+  .prose li { margin-bottom: 8px; }
+  .prose a { color: var(--accent); }
