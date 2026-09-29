@@ -884,3 +884,31 @@
   .count-units .cu:first-child .cn { color: var(--accent); }
   .cu .cl { display: block; margin-top: 10px; font-family: var(--display); font-size: 11px; letter-spacing: .12em; color: var(--muted); text-transform: uppercase; }
   @media (max-width: 760px) { .count-inner { justify-content: flex-start; text-align: left; } .count-units .cu { padding: 0 14px; } .cu .cn { font-size: 32px; } }
+
+  /* ============ VARIÉTÉ DE MISES EN PAGE (pages d'infos) ============ */
+  /* colonnes gardées plus longtemps avant de s'empiler */
+  @media (max-width: 860px) and (min-width: 700px) { .icard-grid.three { grid-template-columns: repeat(3, 1fr); gap: 28px; } }
+
+  /* étapes numérotées */
+  .icard-grid.steps { counter-reset: step; }
+  .steps .icard { counter-increment: step; }
+  .steps .icard h3::before { content: "0" counter(step); display: block; font-size: clamp(40px, 4.4vw, 64px); line-height: 1; color: var(--accent); margin-bottom: 18px; letter-spacing: -.02em; }
+
+  /* lignes : titre à gauche, texte à droite */
+  .icard-grid.rows { grid-template-columns: 1fr; gap: 0; }
+  .rows .icard { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: 12px 48px; align-items: baseline; padding-block: 28px; }
+  .rows .icard:last-child { border-bottom: 1px solid var(--line-2); }
+  .rows .icard h3 { margin: 0; font-size: clamp(20px, 2.2vw, 30px); }
+  .rows .icard p { font-size: 16.5px; margin: 0; }
+  @media (max-width: 700px) { .rows .icard { grid-template-columns: 1fr; } }
+
+  /* FAQ en accordéon */
+  .faq-list { margin-top: 48px; border-bottom: 1px solid var(--line-2); }
+  .faq-item { border-top: 1px solid var(--line-2); }
+  .faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 24px; padding: 26px 0;
+    font-family: var(--display); font-weight: 700; text-transform: uppercase; font-size: clamp(17px, 1.8vw, 24px); line-height: 1.15; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: "+"; flex: none; font-size: 30px; line-height: 1; color: var(--accent); transition: transform .25s var(--ease); }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item summary:hover { color: var(--accent); }
+  .faq-item p { margin: 0; padding: 0 0 28px; max-width: 70ch; color: var(--muted); font-size: 16.5px; line-height: 1.7; }
