@@ -1006,3 +1006,14 @@
   .h-hero .actions .btn { height: calc(46px * 920 / 940); padding: 0 22px; line-height: 1; }
   .h-hero .actions .btn-ghost { padding: 0; }
   @media (max-width: 520px) { .h-hero .actions .btn { height: calc(36px * 920 / 940); padding: 0 14px; font-size: 12px; } .h-hero .actions .btn-ghost { padding: 0; } }
+
+  /* manifeste sur téléphone : l'éclair entier, sous le texte, à droite (comme sur ordinateur) */
+  @media (max-width: 700px) {
+    .h-manifeste { padding-bottom: 280px; }
+    .h-manifeste .bolt { top: auto; bottom: 36px; right: 10vw; transform: none; height: 230px; opacity: 1; }
+  }
+
+  /* confort : cibles tactiles assez grandes et ancres qui ne passent pas sous l'en-tête */
+  .sec-top a { display: inline-block; padding-block: 12px; }
+  [id] { scroll-margin-top: 110px; }
+  @media (max-width: 1040px) { [id] { scroll-margin-top: 80px; } }
