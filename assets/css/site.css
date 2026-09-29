@@ -122,15 +122,15 @@
       flex-direction: column; align-items: flex-start; gap: 2px;
       background: var(--bg-2); border-bottom: 1px solid var(--line);
       padding: 14px 24px 22px; max-height: calc(100dvh - 70px); overflow-y: auto;
-      transform: translateY(-8px); opacity: 0; pointer-events: none;
-      transition: transform .2s var(--ease), opacity .2s var(--ease);
+      transform: translateY(-8px); opacity: 0; pointer-events: none; visibility: hidden;
+      transition: transform .2s var(--ease), opacity .2s var(--ease), visibility 0s linear .2s;
     }
-    .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
+    .nav-links.open { transform: none; opacity: 1; pointer-events: auto; visibility: visible; transition-delay: 0s; }
     .nav-links > a, .nav-parent { font-size: 17px; padding: 12px 0; width: 100%; }
     .nav-item { width: 100%; }
     .nav-parent::after { display: none; }
     .nav-drop {
-      position: static; opacity: 1; transform: none; pointer-events: auto;
+      position: static; opacity: 1; transform: none; pointer-events: inherit;
       min-width: 0; background: transparent; border: 0; box-shadow: none;
       padding: 0 0 8px 14px; border-left: 1px solid var(--line); margin-left: 2px;
     }
