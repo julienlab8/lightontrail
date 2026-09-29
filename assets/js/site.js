@@ -72,20 +72,20 @@
     setInterval(tick, 1000);
   })();
 
-  // Newsletter: inline confirmation, no backend
+  // Newsletter: submit to Brevo via hidden iframe, inline confirmation
   (function () {
     var form = document.getElementById('newsForm');
     if (!form) return;
     var note = document.getElementById('newsNote');
     form.addEventListener('submit', function (e) {
-      e.preventDefault();
       var input = form.querySelector('input[type="email"]');
       if (!input.value || !input.checkValidity()) {
+        e.preventDefault();
         note.textContent = 'Entrez une adresse e-mail valide.';
         input.focus();
         return;
       }
-      form.reset();
-      note.textContent = 'Merci ! Vous êtes inscrit·e à la newsletter LIGHT ON.';
+      note.textContent = 'Merci ! Vérifiez votre boîte mail pour confirmer votre inscription.';
+      setTimeout(function () { form.reset(); }, 200);
     });
   })();
