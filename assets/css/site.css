@@ -863,3 +863,11 @@
   .cta-slim .btn-primary { background: var(--accent); color: var(--on-accent); }
   .cta-slim .btn-primary:hover { background: var(--text); color: var(--bg); }
   @media (max-width: 860px) { .val-grid { gap: 32px 0; } .icard-grid { gap: 32px; } .h-hero .dist { text-align: left; } }
+
+  /* touches d'orange : filet d'accent sur les blocs, chiffres clés, bouton de trace */
+  .icard, .val { position: relative; }
+  .icard::before, .val::before { content: ""; position: absolute; top: -1px; left: 0; width: 56px; height: 3px; background: var(--accent); }
+  .icard:has(.icard-img)::before { display: none; }
+  .course-stats .v { color: var(--accent); }
+  .btn-gpx { background: var(--accent); color: var(--on-accent); border: 0; }
+  .btn-gpx:hover { background: var(--text); color: var(--bg); }
