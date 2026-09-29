@@ -146,15 +146,20 @@
   .partners a:hover img { opacity: 1; }
 
   /* ---------- appel final ---------- */
-  .cta { background: var(--orange); color: var(--noir); position: relative; overflow: hidden; }
-  .cta .wrap { padding-block: clamp(80px, 12vw, 170px); display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; }
-  .cta h2 { font-size: clamp(40px, 8vw, 132px); max-width: 11ch; }
-  .cta p { margin: 26px 0 36px; font-size: 18px; max-width: 40ch; }
-  .cta .btn { background: var(--noir); color: var(--blanc); }
-  .cta .btn:hover { background: var(--blanc); color: var(--noir); }
-  .cta .picto { width: clamp(120px, 22vw, 340px); }
-  .cta .picto .cls-1, .cta .picto .cls-2 { fill: var(--noir); }
-  @media (max-width: 700px) { .cta .wrap { grid-template-columns: 1fr; } .cta .picto { width: 110px; } }
+  .cta { position: relative; overflow: hidden; min-height: 92vh; display: flex; align-items: flex-end; }
+  .cta > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(.55) contrast(1.05); }
+  .cta::before { content: ""; position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(90deg, rgba(35,35,35,.94) 0%, rgba(35,35,35,.7) 45%, rgba(35,35,35,.25) 100%),
+                linear-gradient(0deg, rgba(35,35,35,.9) 0%, rgba(35,35,35,0) 45%); }
+  .cta .wrap { position: relative; z-index: 2; width: 100%; padding-block: clamp(72px, 10vw, 140px); display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; }
+  .cta .label { margin-bottom: 22px; }
+  .cta h2 { font-size: clamp(40px, 7.4vw, 124px); max-width: 12ch; }
+  .cta p { margin: 28px 0 40px; font-size: 18px; max-width: 42ch; color: rgba(255,255,255,.78); }
+  .cta .btns { display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+  .cta .picto { width: clamp(110px, 16vw, 240px); }
+  .cta .picto .cls-1 { fill: var(--blanc); }
+  .cta .picto .cls-2 { fill: var(--orange); }
+  @media (max-width: 700px) { .cta .wrap { grid-template-columns: 1fr; } .cta .picto { display: none; } }
 
   /* ---------- pied ---------- */
   footer { padding-block: 72px 36px; }
@@ -306,11 +311,16 @@
 
 
   <section class="cta">
+    <img src="../assets/img/programme-depart.jpg" alt="" loading="lazy" />
     <div class="wrap">
       <div>
-        <h2>On se voit sur la ligne de départ&nbsp;?</h2>
-        <p>Les inscriptions sont ouvertes. Choisissez votre distance, on s'occupe du reste. Rendez-vous le 4 avril 2027.</p>
-        <a class="btn" href="https://in.njuko.com/light-on-trail-pierre-percee1790497118122" target="_blank" rel="noopener">S'inscrire →</a>
+        <div class="label">Dimanche 4 avril 2027 · 7h30</div>
+        <h2>On se voit sur la <em>ligne de départ</em>&nbsp;?</h2>
+        <p>Les inscriptions sont ouvertes. Choisissez votre distance, on s'occupe du reste.</p>
+        <div class="btns">
+          <a class="btn" href="https://in.njuko.com/light-on-trail-pierre-percee1790497118122" target="_blank" rel="noopener">S'inscrire →</a>
+          <a class="btn btn-line" href="../courses.html">Comparer les distances</a>
+        </div>
       </div>
       <svg class="picto" viewBox="420 220 550 940" aria-hidden="true"><polygon class="cls-1" points="894.16 379.47 885.15 426.63 906.5 426.63 906.5 851.64 679.12 851.64 670.11 898.8 953.66 898.8 953.66 379.47 894.16 379.47"/><polygon class="cls-1" points="481.54 426.63 722.44 426.63 731.45 379.47 434.37 379.47 434.37 898.8 507.4 898.8 516.41 851.64 481.54 851.64 481.54 426.63"/><polygon class="cls-2" points="861.4 229.3 820.4 229.3 737.01 650.75 638.85 525.16 523.33 1149.33 564.19 1149.33 659.9 627.39 758.19 753.11 861.4 229.3"/></svg>
     </div>
