@@ -126,7 +126,9 @@
   .photos { display: grid; grid-template-columns: 1.4fr 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 6px; height: min(92vh, 900px); }
   .photos img { width: 100%; height: 100%; object-fit: cover; }
   .photos .big { grid-row: span 2; }
-  .photos-cap { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding-block: 28px 0; }
+  .retour { padding-top: clamp(40px, 6vw, 80px); }
+  .retour .sec-top { border-bottom: 0; padding-bottom: 36px; }
+  .retour .sub { color: var(--soft); font-size: 15px; margin: 10px 0 0; font-family: var(--text); text-transform: none; }
   @media (max-width: 760px) { .photos { grid-template-columns: 1fr 1fr; height: auto; grid-template-rows: none; } .photos .big { grid-column: 1 / -1; grid-row: auto; aspect-ratio: 4/3; } .photos img:not(.big) { aspect-ratio: 1; } }
 
   /* ---------- actus ---------- */
@@ -137,13 +139,18 @@
   .news p { margin: 8px 0 0; color: var(--soft); max-width: 60ch; }
   @media (max-width: 700px) { .news .row { grid-template-columns: 1fr; gap: 8px; } }
 
-  /* ---------- partenaires ---------- */
-  .partners { padding-block: 56px; background: var(--orange); color: var(--noir); }
-  .partners .label { color: var(--noir); }
-  .partners .logos { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 36px 48px; margin-top: 28px; }
-  .partners img { height: 38px; width: auto; filter: brightness(0) invert(1); opacity: 1; transition: transform .2s; }
-  .partners a:hover img { transform: scale(1.06); }
-  .partners a:hover img { opacity: 1; }
+  /* ---------- partenaires (bandeau défilant) ---------- */
+  .partners { padding-block: 40px 44px; background: var(--orange); color: var(--noir); overflow: hidden; }
+  .partners .label { color: var(--noir); margin-bottom: 26px; }
+  .marquee { overflow: hidden; }
+  .marquee .track { display: flex; align-items: center; gap: 88px; width: max-content; animation: defile 26s linear infinite; }
+  .marquee:hover .track { animation-play-state: paused; }
+  .marquee a { flex: none; }
+  .marquee img { height: 42px; width: auto; filter: brightness(0) invert(1); }
+  .marquee img.pp { height: 56px; }
+  @keyframes defile { to { transform: translateX(-50%); } }
+  @media (max-width: 640px) { .marquee .track { gap: 52px; } .marquee img { height: 32px; } .marquee img.pp { height: 42px; } }
+  @media (prefers-reduced-motion: reduce) { .marquee .track { animation: none; flex-wrap: wrap; } }
 
   /* ---------- appel final ---------- */
   .cta { position: relative; overflow: hidden; min-height: 92vh; display: flex; align-items: flex-end; }
@@ -272,7 +279,11 @@
     </div>
   </section>
 
-  <section>
+  <section class="retour">
+    <div class="wrap sec-top">
+      <div><h2>Retour sur 2026</h2><p class="sub">750 inscrits sur le 17 KM* et le 37 KM**, un lac et beaucoup de sourires.</p></div>
+      <a href="../medias.html">L'aftermovie et toutes les photos →</a>
+    </div>
     <div class="photos">
       <img class="big" src="../assets/img/gallery-08.jpg" alt="Arrivée bras levés" loading="lazy" />
       <img src="../assets/img/gallery-04.jpg" alt="Deux coureurs en sous-bois, le lac en contre-jour" loading="lazy" />
@@ -280,22 +291,24 @@
       <img src="../assets/img/gallery-12.jpg" alt="Un podium devant le mur LIGHT ON" loading="lazy" />
       <img src="../assets/img/gallery-05.jpg" alt="Duo pouces levés dans la montée" loading="lazy" />
     </div>
-    <div class="wrap photos-cap">
-      <div class="label">Édition 2026 · 1 500 coureurs</div>
-      <a class="btn-line btn" href="../medias.html" style="padding:0 0 4px;">L'aftermovie et toutes les photos →</a>
-    </div>
   </section>
 
   <section class="partners">
-    <div class="wrap">
-      <div class="label">Ils nous soutiennent</div>
-      <div class="logos">
-        <a href="https://www.paysdeslacs.com/" target="_blank" rel="noopener"><img src="../assets/partners/pierre-percee.png" alt="Pierre-Percée Pays des Lacs" style="height:50px" /></a>
+    <div class="wrap"><div class="label">Ils nous soutiennent</div></div>
+    <div class="marquee">
+      <div class="track">
+        <a href="https://www.paysdeslacs.com/" target="_blank" rel="noopener"><img src="../assets/partners/pierre-percee.png" alt="Pierre-Percée Pays des Lacs" class="pp" /></a>
         <a href="https://www.n2aexpertises.fr/" target="_blank" rel="noopener"><img src="../assets/partners/n2a.svg" alt="N2A Expertises" /></a>
         <a href="https://apirun.fr/" target="_blank" rel="noopener"><img src="../assets/partners/white/apirun.png" alt="Apirun" /></a>
         <a href="https://activa-location.com/" target="_blank" rel="noopener"><img src="../assets/partners/white/activa.png" alt="Activa" /></a>
-        <a href="https://www.creditmutuel.fr/fr/caisses/10278/05005/00/000" target="_blank" rel="noopener"><img src="../assets/partners/white/credit-mutuel.png" alt="Crédit Mutuel" /></a>
+        <a href="https://www.creditmutuel.fr/fr/caisses/10278/05005/00/000" target="_blank" rel="noopener"><img src="../assets/partners/white/credit-mutuel.png" alt="Crédit Mutuel Metz Belles Rives" /></a>
         <a href="https://www.europe2.fr/" target="_blank" rel="noopener"><img src="../assets/partners/white/europe2.png" alt="Europe 2" /></a>
+        <a href="https://www.paysdeslacs.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="../assets/partners/pierre-percee.png" alt="" class="pp" /></a>
+        <a href="https://www.n2aexpertises.fr/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="../assets/partners/n2a.svg" alt="" /></a>
+        <a href="https://apirun.fr/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="../assets/partners/white/apirun.png" alt="" /></a>
+        <a href="https://activa-location.com/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="../assets/partners/white/activa.png" alt="" /></a>
+        <a href="https://www.creditmutuel.fr/fr/caisses/10278/05005/00/000" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="../assets/partners/white/credit-mutuel.png" alt="" /></a>
+        <a href="https://www.europe2.fr/" target="_blank" rel="noopener" aria-hidden="true" tabindex="-1"><img src="../assets/partners/white/europe2.png" alt="" /></a>
       </div>
     </div>
   </section>
