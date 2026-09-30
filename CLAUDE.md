@@ -10,6 +10,7 @@ Aperçu local : `python3 -m http.server 8080` à la racine, puis http://localhos
 - Ordre d'affichage : du plus petit au plus grand (17 → 37 → 54). Exception : programme et horaires restent chronologiques (le 54 part en premier).
 - L'organisateur est **LIGHT ON** (pas « LIGHT ON TRAIL »).
 - Ouverture des inscriptions : écrire « 29 septembre - 20h ».
+- Le village de l'événement s'appelle **Village LIGHT ON** (pour ne pas le confondre avec le village de Pierre-Percée ou de Celles-sur-Plaine).
 - Contact : hello@lightontri.com est volontaire (seule adresse pour le moment).
 - Le menu et le pied de page sont dupliqués dans chaque page HTML : toute modification doit être répétée sur toutes les pages.
 
