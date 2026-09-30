@@ -1199,3 +1199,18 @@
   .page-hero.ph-stack .ph-bg { position: relative; inset: auto; display: block; width: 100%; height: var(--ph-h); }
   .page-hero.ph-stack::after { background: linear-gradient(180deg, rgba(35,35,35,.25) 0, rgba(35,35,35,0) calc(var(--ph-h) * .45), var(--bg) var(--ph-h), var(--bg) 100%); }
   .page-hero.ph-stack .wrap { position: relative; z-index: 2; margin-top: calc(clamp(36px, 5vw, 80px) * -1); }
+
+/* =====================================================================
+   RETOURS DU 01/10/2026 (2)
+   ===================================================================== */
+  /* rythme vertical de l'accueil : même espace entre un filet et le sur-titre de la section suivante */
+  :root { --sec-gap: clamp(72px, 9vw, 128px); }
+  .h-courses { padding-top: var(--sec-gap); padding-bottom: 0; }
+  .h-voices { padding-block: var(--sec-gap); }
+  /* liste de la section 03 : plus de numéros (ils se confondaient avec « 03 »), un repère carré orange */
+  .h-list a { grid-template-columns: 1fr auto; }
+  .h-list h3::before { content: ""; display: inline-block; width: .32em; height: .32em; margin-right: .5em; background: var(--accent); vertical-align: .18em; }
+  @media (max-width: 360px) {
+    .count-units .cu { padding: 10px 7px; } .count-units .cu.brk { padding: 10px 10px 10px 9px; margin-right: 2px; }
+    .cu .cn { font-size: 25px; } .cu .cl { font-size: 9px; letter-spacing: .04em; }
+  }
