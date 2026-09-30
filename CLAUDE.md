@@ -27,6 +27,10 @@ Aperçu local : `python3 -m http.server 8080` à la racine, puis http://localhos
 - Signatures de marque (à utiliser avec parcimonie) : crochets du picto (`.brk`, `.brk-in`), coupe en biais dans l'angle de l'éclair (`.cut`, une fois par page), repères GPS (`.geo`), éclair dans les boutons S'inscrire (`.btn-go`).
 - Le double menu (barre d'accès rapide + menu principal) est à conserver tel quel.
 - Mettre en orange un mot clé des grands titres avec `<em>` (jamais d'italique).
+- Accueil : sections numérotées (`.idx` « 01 », « 02 »…) avec des grands titres de même taille ; « Les courses*** » (`.sec-top.lead`) est le titre le plus fort, les chiffres 17/37/54 sont en contour.
+- Sur mobile, varier les mises en page : `.swipe` (cartes qui défilent à l'horizontale), étapes en frise, chiffres incrustés dans les photos. Éviter les longues piles de blocs identiques.
+- Témoignages : uniquement de vrais retours de coureurs, cités mot pour mot, avec prénom + initiale et distance (`.v-lead`, `.v-card`, `.q-inline`). Le 54 KM*** est nouveau en 2027 : pas de témoignage.
+- Chaque page doit proposer un bouton S'inscrire bien visible ; un seul bouton plein par groupe de boutons.
 - Les styles de la refonte sont à la fin de `assets/css/site.css` ; changer le `?v=` des liens CSS/JS après chaque modification.
 
 ## Ton rédactionnel LIGHT ON
@@ -52,6 +56,8 @@ Sur le site web : garder cette personnalité, un cran plus sobre que sur Instagr
 **Références** :
 - « 17, 37 ou 54 KM : trois façons de découvrir Pierre-Percée. Une seule règle : en profiter. »
 - « LIGHT ON — Le goût de l'effort, grandeur nature. »
+
+**Aussi** : pas de tirets longs (— ou –), uniquement « - ». Pas le mot « fête ». Remplacer les promesses (« organisation soignée », « ravitaillements généreux ») par des preuves concrètes : paysage, singles, bénévoles, ravitos, lac, retours de coureurs. Le Lac de Pierre-Percée est « l'un des plus grands lacs de Lorraine » (pas « le plus grand »). Chaque grande section doit contenir au moins une phrase impossible à copier sur le site d'un autre trail. Exemples validés : « Du trail sérieux, sans se prendre au sérieux », « prévoyez le café avant », « Le reste, c'est vos jambes ».
 
 **Test avant chaque texte** : cette phrase pourrait-elle appartenir à n'importe quelle course outdoor ? Si oui, la retravailler. Une bonne phrase LIGHT ON pourrait être dite à voix haute par quelqu'un de l'équipe. Entre plusieurs formulations, choisir la plus courte, la plus naturelle et la moins publicitaire.
 
