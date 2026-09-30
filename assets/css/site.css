@@ -1190,3 +1190,12 @@
   @media (max-width: 640px) { .sec-top { align-items: flex-start; } }
   .cmp-wrap { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.18) transparent; }
   @media (max-width: 520px) { .page-hero h1.h1-long { font-size: 9.4vw; } }
+  picture > source { display: none; }
+  /* lien souligné à côté d'un bouton plein : même hauteur, soulignement aligné sur le bas du bouton */
+  .btn-go ~ .btn-ghost, .btn-primary ~ .btn-ghost { height: calc(46px * 920 / 940); padding: 0; line-height: 1; box-sizing: border-box; align-self: center; }
+  @media (max-width: 520px) { .btn-go ~ .btn-ghost, .btn-primary ~ .btn-ghost { height: calc(36px * 920 / 940); } }
+  /* en-tête empilé : photo en bandeau, texte dessous (quand le texte couvrirait des visages) */
+  .page-hero.ph-stack { --ph-h: clamp(300px, 60vh, 640px); display: block; min-height: 0; padding-top: 0; }
+  .page-hero.ph-stack .ph-bg { position: relative; inset: auto; display: block; width: 100%; height: var(--ph-h); }
+  .page-hero.ph-stack::after { background: linear-gradient(180deg, rgba(35,35,35,.25) 0, rgba(35,35,35,0) calc(var(--ph-h) * .45), var(--bg) var(--ph-h), var(--bg) 100%); }
+  .page-hero.ph-stack .wrap { position: relative; z-index: 2; margin-top: calc(clamp(36px, 5vw, 80px) * -1); }
