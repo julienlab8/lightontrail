@@ -1,5 +1,6 @@
 # Types de fichiers modernes
 AddType image/avif .avif
+AddType image/webp .webp
 AddType font/woff2 .woff2
 
 # Page d'erreur LIGHT ON
