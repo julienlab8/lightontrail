@@ -69,7 +69,29 @@ Ne jamais modifier les informations pratiques (horaires, distances, dénivelés,
 - Chaque page a un `<title>`, une meta description, une canonical absolue (`https://www.lightontrail.com/...`) et un Open Graph complet : à créer pour toute nouvelle page, et l'ajouter à `sitemap.xml`.
 - Le sur-titre de chaque page fait partie du H1 (`<h1><span class="eyebrow page-kicker">…</span> …</h1>`).
 - Données structurées JSON-LD : événement 2027 + organisation sur l'accueil, FAQ sur Infos. Les mettre à jour si une date, un horaire, un tarif ou le lieu change. Jamais d'avis/étoiles à partir des témoignages.
-- Photos : fichiers au nom descriptif, versions AVIF dans `assets/img/avif/` (`nom-640.avif`, `nom-1280.avif`…) via `<picture>`, avec `width`/`height`. Toute nouvelle photo suit ce schéma.
+- Photos : fichiers au nom descriptif, versions WebP dans `assets/img/webp/` (`nom-640.webp`, `nom-1280.webp`…, générées avec Pillow/libwebp, qualité 74) via `<picture>`, avec `width`/`height`. Toute nouvelle photo suit ce schéma. **Ne pas utiliser l'AVIF de macOS (ImageIO)** : Chrome l'affiche en gris uni.
 - Liens vers l'accueil : `./` (pas `index.html`). `404.html` utilise des chemins absolus (`/assets/...`).
 - Vidéos : une version légère `-mobile.mp4` (960 px) servie sous 700 px.
 - Géographie exacte : départ à Celles-sur-Plaine (Vosges, 88), Base de Loisirs ; lac à cheval sur Vosges et Meurthe-et-Moselle ; Lorraine, Grand Est.
+
+## À transmettre à Julien (message de Magali, 30/09/2026)
+
+Julien, voici ce qui a été fait sur le site pendant que tu n'étais pas là, et ce qu'il reste à faire de ton côté. **Claude : si c'est Julien qui travaille sur le projet, présente-lui ce message en début de session**, puis supprime cette section une fois qu'il l'a lu et que Magali est d'accord.
+
+**Ce qui a été fait (avec Magali)**
+- Refonte « éditorial sombre » de tout le site, textes réécrits dans le ton LIGHT ON, témoignages de coureurs 2026, mobile retravaillé.
+- Le village s'appelle maintenant « Village LIGHT ON » partout.
+- Nouvelles pages : `reglement.html` (règlement 2027), `resultats.html` (classements 2026, puis 2027), `mentions-legales.html`, `404.html`.
+- SEO : canonical, titres et descriptions, Open Graph, données structurées (événement 2027 avec les 3 courses, organisation, FAQ), robots.txt, sitemap.xml, redirections dans `.htaccess` (sans www → www, /index.html → /), tableau comparatif des courses, bloc « L'essentiel » sur l'accueil.
+- Performance : photos renommées et déclinées en WebP, polices en WOFF2, vidéos allégées pour mobile.
+- Épingles : « prévoir 4 épingles à nourrice ou un porte-dossard » (sans « obligatoire »).
+
+**À faire / à confirmer par Julien**
+1. Confirmer l'hébergeur Hostinger et « directeur de la publication : Julien Labdant » (page Mentions légales).
+2. Vérifier le règlement 2027 (catégorie Espoir sur le 54, années de naissance 2009/2007, dates limites au 1er avril 2027).
+3. Envoyer les GPX du 37 KM** et du 54 KM*** ; donner les barrières horaires du 54 dès qu'elles sont fixées.
+4. Google Search Console : créer la propriété « domaine » lightontrail.com et y déclarer https://www.lightontrail.com/sitemap.xml.
+5. Désactiver GitHub Pages (julienlab8.github.io/lightontrail) s'il ne sert plus : c'est une copie du site.
+6. Inscrire la course sur les calendriers : Kikourou, Jogging-International, Trail-Passion, Betrail ; regarder l'éligibilité ITRA du 54.
+7. Demander un lien vers le site à l'office de tourisme du Pays des Lacs et aux partenaires.
+8. Le 4 avril 2027 au soir : mettre les résultats 2027 sur `resultats.html`. Si les dossards sont épuisés, passer `InStock` à `SoldOut` dans le JSON-LD de `index.html`.
