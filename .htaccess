@@ -1,0 +1,11 @@
+# Page d'erreur LIGHT ON
+ErrorDocument 404 /404.html
+
+# Une seule adresse officielle : https://www.lightontrail.com/
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^lightontrail\.com$ [NC]
+RewriteRule ^(.*)$ https://www.lightontrail.com/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://www.lightontrail.com/ [R=301,L]
+</IfModule>

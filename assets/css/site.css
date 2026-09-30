@@ -1,10 +1,10 @@
 /* ============ BRAND FONTS (self-hosted) ============ */
   /* Lemon Milk = titrages MAJ (display, uppercase). Roboto = texte courant. */
-  @font-face { font-family: "Lemon Milk"; src: url("../fonts/LemonMilk.otf") format("opentype"); font-weight: 400; font-display: swap; }
-  @font-face { font-family: "Lemon Milk"; src: url("../fonts/LemonMilkBold.otf") format("opentype"); font-weight: 700; font-display: swap; }
-  @font-face { font-family: "Roboto LOT"; src: url("../fonts/Roboto-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
-  @font-face { font-family: "Roboto LOT"; src: url("../fonts/Roboto-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
-  @font-face { font-family: "Roboto LOT"; src: url("../fonts/Roboto-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: "Lemon Milk"; src: url("../fonts/LemonMilk.woff2") format("woff2"), url("../fonts/LemonMilk.otf") format("opentype"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Lemon Milk"; src: url("../fonts/LemonMilkBold.woff2") format("woff2"), url("../fonts/LemonMilkBold.otf") format("opentype"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: "Roboto LOT"; src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Roboto LOT"; src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+  @font-face { font-family: "Roboto LOT"; src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
   /* ============ TOKENS (dark theme, locked) ============ */
   :root {
     --bg:        #232323;   /* noir de marque */
@@ -411,7 +411,7 @@
   footer { border-top: 1px solid var(--line); background: var(--bg-2); padding-block: 64px 36px; }
   .foot-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; }
   .foot-brand p { color: var(--muted); font-size: 14.5px; max-width: 32ch; margin: 16px 0 0; }
-  .foot-col h4 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--faint); margin: 0 0 16px; font-weight: 700; }
+  .foot-col .foot-h { font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--faint); margin: 0 0 16px; font-weight: 700; }
   .foot-col a, .foot-col p { display: block; color: var(--muted); font-size: 14.5px; margin-bottom: 11px; transition: color .15s var(--ease); }
   .foot-col a:hover { color: var(--accent); }
   .foot-bottom { margin-top: 52px; padding-top: 24px; border-top: 1px solid var(--line);
@@ -845,7 +845,7 @@
   .h-newsletter { padding-bottom: clamp(80px, 10vw, 140px); }
 
   .h-cta { position: relative; overflow: hidden; min-height: 92vh; display: flex; align-items: flex-end; }
-  .h-cta > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(.55) contrast(1.05); }
+  .h-cta > img, .h-cta > picture > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: grayscale(.55) contrast(1.05); }
   .h-cta::before { content: ""; position: absolute; inset: 0; z-index: 1;
     background: linear-gradient(90deg, rgba(35,35,35,.94) 0%, rgba(35,35,35,.7) 45%, rgba(35,35,35,.25) 100%), linear-gradient(0deg, rgba(35,35,35,.9) 0%, rgba(35,35,35,0) 45%); }
   .h-cta .wrap { position: relative; z-index: 2; width: 100%; padding-block: clamp(72px, 10vw, 140px); display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: end; }
@@ -856,7 +856,7 @@
   .h-cta .picto .p1 { fill: #fff; } .h-cta .picto .p2 { fill: var(--accent); }
   @media (max-width: 700px) { .h-cta .wrap { grid-template-columns: 1fr; } .h-cta .picto { display: none; } }
   /* appel de fin de page : photo de la ligne de départ plutôt qu'un aplat */
-  .cta-slim { background: linear-gradient(90deg, rgba(35,35,35,.96) 0%, rgba(35,35,35,.75) 55%, rgba(35,35,35,.45) 100%), url("../img/programme-depart.jpg") center 40% / cover no-repeat; color: var(--text); }
+  .cta-slim { background: linear-gradient(90deg, rgba(35,35,35,.96) 0%, rgba(35,35,35,.75) 55%, rgba(35,35,35,.45) 100%), url("../img/depart-trail-lac-pierre-percee.jpg") center 40% / cover no-repeat; color: var(--text); }
   .cta-slim p { color: rgba(255,255,255,.75); }
   .cta-slim .btn-primary { background: var(--accent); color: var(--on-accent); }
   .cta-slim .btn-primary:hover { background: var(--text); color: var(--bg); }
@@ -1150,3 +1150,43 @@
   .val .q { margin-top: 16px; padding-left: 12px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.72); }
   .val .q cite { font-size: 12px; }
   .foot-bottom span a { color: inherit; text-decoration: underline; text-underline-offset: 3px; } .foot-bottom span a:hover { color: var(--accent); }
+
+/* =====================================================================
+   SEO (01/10/2026)
+   ===================================================================== */
+  /* sur-titre intégré au H1 : même rendu qu'avant */
+  h1 .page-kicker { display: block; width: fit-content; line-height: 1.2; letter-spacing: .14em; }
+  /* lien d'évitement clavier */
+  .skip { position: absolute; left: 12px; top: -60px; z-index: 1000; padding: 10px 14px; background: var(--accent); color: var(--on-accent); font-family: var(--display); font-weight: 700; font-size: 13px; }
+  .skip:focus { top: 12px; }
+  .c-num small, .h-race .num small { margin-left: 0; }
+  /* accueil : l'essentiel en une fiche */
+  .h-facts { border-bottom: 1px solid var(--line-2); padding-block: clamp(40px, 5vw, 64px); }
+  .facts-title { margin: 0 0 24px; font-family: var(--display); font-weight: 700; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+  .facts-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 28px 32px; margin: 0; }
+  .facts-grid > div { border-top: 1px solid var(--line-2); padding-top: 16px; }
+  .facts-grid dt { font-family: var(--display); font-weight: 700; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .facts-grid dd { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(15px, 1.25vw, 18px); line-height: 1.3; }
+  .facts-grid dd span { display: block; margin-top: 6px; font-family: var(--font); font-weight: 400; font-size: 13.5px; line-height: 1.45; color: var(--muted); }
+  @media (max-width: 1100px) { .facts-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+  @media (max-width: 600px) { .facts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 18px; } }
+
+  /* page Courses : tableau comparatif */
+  .cmp-wrap { margin-top: clamp(32px, 4vw, 52px); overflow-x: auto; }
+  .cmp { width: 100%; min-width: 620px; border-collapse: collapse; font-size: 15px; }
+  .cmp caption { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .cmp th, .cmp td { text-align: left; vertical-align: top; padding: 16px 18px 16px 0; border-top: 1px solid var(--line-2); }
+  .cmp thead th, .cmp thead td { border-top: 0; padding-bottom: 18px; }
+  .cmp thead th { font-family: var(--display); font-weight: 700; font-size: clamp(22px, 2.6vw, 38px); line-height: 1; }
+  .cmp thead th a:hover { color: var(--accent); }
+  .cmp tbody th { width: 20%; font-family: var(--display); font-weight: 700; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); padding-top: 19px; }
+  .cmp tbody tr:nth-child(-n+3) td { font-family: var(--display); font-weight: 700; font-size: 18px; color: var(--accent); }
+  .cmp tbody td { color: rgba(255,255,255,.86); line-height: 1.5; }
+  .cmp tbody tr:last-child th, .cmp tbody tr:last-child td { border-bottom: 1px solid var(--line-2); }
+  @media (max-width: 700px) { .cmp tbody th { position: sticky; left: 0; background: var(--bg); } }
+  :where(img[width][height]) { height: auto; }
+  picture { display: contents; }
+  .foot-col .foot-h { font-family: var(--display); line-height: 1.1; }
+  @media (max-width: 640px) { .sec-top { align-items: flex-start; } }
+  .cmp-wrap { scrollbar-width: thin; scrollbar-color: rgba(255,255,255,.18) transparent; }
+  @media (max-width: 520px) { .page-hero h1.h1-long { font-size: 9.4vw; } }

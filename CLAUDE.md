@@ -63,3 +63,13 @@ Sur le site web : garder cette personnalité, un cran plus sobre que sur Instagr
 **Test avant chaque texte** : cette phrase pourrait-elle appartenir à n'importe quelle course outdoor ? Si oui, la retravailler. Une bonne phrase LIGHT ON pourrait être dite à voix haute par quelqu'un de l'équipe. Entre plusieurs formulations, choisir la plus courte, la plus naturelle et la moins publicitaire.
 
 Ne jamais modifier les informations pratiques (horaires, distances, dénivelés, ravitaillements, barrières horaires, tarifs) sans validation.
+
+## SEO (mis en place le 30/09/2026)
+
+- Chaque page a un `<title>`, une meta description, une canonical absolue (`https://www.lightontrail.com/...`) et un Open Graph complet : à créer pour toute nouvelle page, et l'ajouter à `sitemap.xml`.
+- Le sur-titre de chaque page fait partie du H1 (`<h1><span class="eyebrow page-kicker">…</span> …</h1>`).
+- Données structurées JSON-LD : événement 2027 + organisation sur l'accueil, FAQ sur Infos. Les mettre à jour si une date, un horaire, un tarif ou le lieu change. Jamais d'avis/étoiles à partir des témoignages.
+- Photos : fichiers au nom descriptif, versions AVIF dans `assets/img/avif/` (`nom-640.avif`, `nom-1280.avif`…) via `<picture>`, avec `width`/`height`. Toute nouvelle photo suit ce schéma.
+- Liens vers l'accueil : `./` (pas `index.html`). `404.html` utilise des chemins absolus (`/assets/...`).
+- Vidéos : une version légère `-mobile.mp4` (960 px) servie sous 700 px.
+- Géographie exacte : départ à Celles-sur-Plaine (Vosges, 88), Base de Loisirs ; lac à cheval sur Vosges et Meurthe-et-Moselle ; Lorraine, Grand Est.
