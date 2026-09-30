@@ -1149,3 +1149,4 @@
   /* citations de la page Événement : plus légères */
   .val .q { margin-top: 16px; padding-left: 12px; font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.72); }
   .val .q cite { font-size: 12px; }
+  .foot-bottom span a { color: inherit; text-decoration: underline; text-underline-offset: 3px; } .foot-bottom span a:hover { color: var(--accent); }
