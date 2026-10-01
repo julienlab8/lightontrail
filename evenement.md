@@ -46,7 +46,7 @@ Samedi 3 avril - Veille de course
 
 **17:00** - Ouverture du Village LIGHT ON & retrait des dossards
 
-Retrait des dossards de 17:00 à 19:00, stands partenaires et restauration sur place.
+Retrait des dossards de 17:00 à 19:00 et stands partenaires.
 
 Dimanche 4 avril - Jour de course
 
@@ -82,7 +82,7 @@ Les partenaires et les acteurs du Pays des Lacs installent leurs stands au Villa
 
 #### Restauration sur place
 
-Buvette et restauration en produits locaux le samedi soir et le dimanche. Pour le café d'avant et le verre d'après.
+Buvette et restauration en produits locaux le dimanche. Pour le café d'avant et le verre d'après.
 
 #### Espace familles
 

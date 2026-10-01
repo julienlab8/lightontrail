@@ -78,7 +78,7 @@ Au Village LIGHT ON ou dans les environs, de quoi manger avant… et surtout apr
 
 #### Au Village LIGHT ON
 
-Buvette et restauration en produits locaux le samedi soir et le dimanche.
+Buvette et restauration en produits locaux le dimanche.
 
 #### Ravitaillements
 
