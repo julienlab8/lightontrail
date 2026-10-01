@@ -12,7 +12,7 @@ Bénévoles, partenaires, presse : il y a plein de façons de faire partie du L
 
 Participer autrement
 
-### Trois façons de faire l'événement.
+### Trois façons de vivre l'événement.
 
 #### [Devenir bénévole](mailto:hello@lightontri.com?subject=Et%20si%20je%20faisais%20partie%20du%20LIGHT%20ON%20Crew%20%3F)
 
@@ -26,17 +26,25 @@ Rejoindre le Crew
 
 Parlons-en
 
-#### [Nous contacter](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
+#### Nous suivre
 
-Une question sur les courses ou un partenariat ? Écrivez-nous à [hello@lightontri.com](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21) ou appelez le [06 37 08 97 57](tel:+33637089757).
+- [Instagram](https://www.instagram.com/lighton_trail/)
 
-Nous écrire
+- [Facebook](https://www.facebook.com/profile.php?id=61581806080267)
+
+- [YouTube](https://www.youtube.com/@lightontri)
+
+- [LinkedIn](https://www.linkedin.com/company/light-on-events)
+
+Une question ? Écrivez-nous à [hello@lightontri.com](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21) ou appelez le [06 37 08 97 57](tel:+33637089757).
+
+[Nous écrire](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
 
 Ils nous soutiennent
 
 ### Nos partenaires.
 
-Merci à nos partenaires et aux collectivités du territoire, qui nous suivent sur chaque kilomètre, des ravitaillements jusqu'au Village LIGHT ON d'arrivée.
+Merci à nos partenaires et aux collectivités du territoire, qui nous suivent sur chaque kilomètre, des ravitaillements jusqu'au Village LIGHT ON.
 
 Partenaire institutionnel
 

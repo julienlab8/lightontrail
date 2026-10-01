@@ -1218,3 +1218,14 @@
   .sec-top.lead h2 { font-size: clamp(34px, 5vw, 80px); line-height: .98; letter-spacing: 0; }
   .sec-top.lead { padding-bottom: 28px; }
   @media (max-width: 640px) { .idx { font-size: 10px; gap: 10px; margin-bottom: 14px; } .idx b::after { width: 20px; margin-left: 10px; } }
+  /* bloc « Nous suivre » (Communauté) : les 4 réseaux en 2 colonnes */
+  .follow-links { list-style: none; margin: 4px 0 18px; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+  .follow-links a { display: inline-flex; align-items: center; gap: 10px; padding-block: 6px; font-family: var(--display); font-weight: 700; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--text); }
+  .follow-links a::before { content: ""; width: 7px; height: 7px; background: var(--accent); }
+  .follow-links a:hover { color: var(--accent); }
+  a.card-cta { color: var(--accent); }
+  a.card-cta:hover { color: var(--text); }
+  .follow-links li { padding-left: 0; margin: 0; }
+  .follow-links li::before { display: none !important; }
+  .icard ul.follow-links { padding: 0; margin: 4px 0 18px; }
+  .icard ul.follow-links li { padding-left: 0; }
