@@ -96,7 +96,7 @@ Horaires, matériel, ravitaillements, balisage et sécurité. Ces informations s
 
 #### Horaires de départ
 
-54 KM\*\*\* à 07:30, 37 KM\*\* à 08:30 et 17 KM\* à 09:30. Tous les départs se font depuis le Village LIGHT ON, à Celles-sur-Plaine.
+**54 KM\*\*\*** : départ à 07:30. **37 KM\*\*** : départ à 08:30. **17 KM\*** : départ à 09:30. Tous les départs se font depuis le Village LIGHT ON, à Celles-sur-Plaine.
 
 #### Matériel
 
