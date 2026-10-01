@@ -50,9 +50,9 @@ Partenaire institutionnel
 
 Partenaire majeur
 
-Fournisseurs officiels
-
 Partenaires officiels
+
+Fournisseurs officiels
 
 Presse
 
