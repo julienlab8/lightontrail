@@ -84,9 +84,17 @@ Les partenaires et les acteurs du Pays des Lacs installent leurs stands au Villa
 
 Buvette et restauration en produits locaux le dimanche. Pour le café d'avant et le verre d'après.
 
-#### Espace familles
+#### Côté supporters
 
-Ouvert à tous. Les proches encouragent à l'arrivée, profitent du lac et gardent une place au soleil pour ceux qui finissent.
+Transats et compagnie pour souffler entre deux passages. Les proches encouragent à l'arrivée, profitent du lac et gardent une place au soleil pour ceux qui finissent.
+
+#### LIGHT ON Kids
+
+Un espace pour les plus jeunes, avec château gonflable si la météo le permet. Les grands courent, les petits sautent.
+
+#### LIGHT ON Shop
+
+La boutique LIGHT ON s'installe au Village. De quoi repartir avec un souvenir de la course, en plus de la médaille.
 
 #### Remise des récompenses
 
