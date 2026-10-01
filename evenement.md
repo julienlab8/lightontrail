@@ -30,7 +30,7 @@ Coureurs, bénévoles, supporters au bord du chemin : chacun fait partie de l�
 
 #### Le plaisir avant le chrono
 
-On vient pour les kilomètres et la ligne d’arrivée... Mais aussi pour lever le nez et en prendre plein les yeux !
+On vient pour les kilomètres et la ligne d’arrivée... Mais aussi pour lever le nez et en prendre plein les yeux ! « Le parcours était vraiment chouette, varié et plutôt bien dosé en termes de difficulté. » - Benjamin B. | 17 KM\*
 
 #### Carré, sans chichis
 
