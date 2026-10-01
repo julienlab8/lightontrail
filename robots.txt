@@ -1,3 +1,45 @@
+# robots.txt - www.lightontrail.com
+# Site public d'un événement sportif : tout le contenu public peut être exploré.
+# Les groupes ci-dessous rendent nos choix explicites, robot par robot.
+# Rappel : robots.txt est une consigne que les robots sérieux respectent, pas une protection.
+
+# --- Moteurs de recherche classiques -------------------------------------
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: Applebot
+User-agent: DuckDuckBot
+User-agent: Qwantbot
+Allow: /
+
+# --- Assistants IA : recherche et citation (réponses avec lien vers le site)
+# Autorisés : c'est ce qui permet à ChatGPT, Claude, Perplexity... de citer la course.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: MistralAI-User
+Allow: /
+
+# --- Assistants IA : entraînement des modèles ----------------------------
+# Autorisés par défaut (01/10/2026) : le site ne contient que de
+# l'information publique sur l'événement, et qu'elle soit connue des modèles
+# aide les assistants à répondre juste sur la course.
+# Pour refuser l'entraînement sans toucher à la recherche, remplacer
+# « Allow: / » par « Disallow: / » dans ce groupe uniquement.
+# Google-Extended et Applebot-Extended ne sont pas des robots : ce sont des
+# jetons de contrôle (Gemini / Apple Intelligence). Ils n'ont aucun effet sur
+# Google Search, AI Overviews ou la recherche Apple.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: meta-externalagent
+Allow: /
+
+# --- Tous les autres robots -----------------------------------------------
 User-agent: *
 Allow: /
 

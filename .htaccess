@@ -2,9 +2,45 @@
 AddType image/avif .avif
 AddType image/webp .webp
 AddType font/woff2 .woff2
+AddType text/markdown .md
+AddCharset utf-8 .md .txt
 
 # Page d'erreur LIGHT ON
 ErrorDocument 404 /404.html
+
+# Fichiers internes du dépôt : jamais servis
+<FilesMatch "^(CLAUDE|README)\.md$">
+  Require all denied
+</FilesMatch>
+RedirectMatch 404 ^/tools/
+
+# Versions Markdown des pages (llms.txt v2) : la page HTML reste l'adresse officielle pour les moteurs
+<IfModule mod_headers.c>
+  <Files "index.md">
+    Header set Link "<https://www.lightontrail.com/>; rel=\"canonical\""
+  </Files>
+  <Files "courses.md">
+    Header set Link "<https://www.lightontrail.com/courses.html>; rel=\"canonical\""
+  </Files>
+  <Files "evenement.md">
+    Header set Link "<https://www.lightontrail.com/evenement.html>; rel=\"canonical\""
+  </Files>
+  <Files "infos.md">
+    Header set Link "<https://www.lightontrail.com/infos.html>; rel=\"canonical\""
+  </Files>
+  <Files "reglement.md">
+    Header set Link "<https://www.lightontrail.com/reglement.html>; rel=\"canonical\""
+  </Files>
+  <Files "resultats.md">
+    Header set Link "<https://www.lightontrail.com/resultats.html>; rel=\"canonical\""
+  </Files>
+  <Files "communaute.md">
+    Header set Link "<https://www.lightontrail.com/communaute.html>; rel=\"canonical\""
+  </Files>
+  <Files "actualites.md">
+    Header set Link "<https://www.lightontrail.com/actualites.html>; rel=\"canonical\""
+  </Files>
+</IfModule>
 
 # Une seule adresse officielle : https://www.lightontrail.com/
 <IfModule mod_rewrite.c>

@@ -74,6 +74,15 @@ Ne jamais modifier les informations pratiques (horaires, distances, dénivelés,
 - Vidéos : une version légère `-mobile.mp4` (960 px) servie sous 700 px.
 - Géographie exacte : départ à Celles-sur-Plaine (Vosges, 88), Base de Loisirs ; lac à cheval sur Vosges et Meurthe-et-Moselle ; Lorraine, Grand Est.
 
+## Agents IA : llms.txt, versions Markdown, robots (01/10/2026)
+
+- `llms.txt` (racine) suit la proposition llms.txt v2 (llmstxt.org, août 2026) : H1, résumé en citation, faits clés, liens vers les pages. **Rédigé à la main** : le mettre à jour si une date, un horaire, un tarif, une barrière ou le lieu change (comme le JSON-LD). Uniquement des faits du site, pas de mots-clés.
+- Ce n'est pas un standard reconnu par tous ni un facteur de classement : Google Search ne s'en sert pas. Il sert aux agents et assistants qui le lisent.
+- Versions Markdown (`index.md`, `courses.md`, `evenement.md`, `infos.md`, `reglement.md`, `resultats.md`, `communaute.md`, `actualites.md`) : **générées** depuis le HTML par `python3 tools/build_md.py`. Relancer le script après toute modification d'une de ces pages ; ne jamais les éditer à la main.
+- Chaque page HTML pointe vers sa version Markdown (`rel="alternate" type="text/markdown"`) et vers `llms.txt` (`rel="describedby"`). Les `.md` renvoient un en-tête `Link: rel="canonical"` vers la page HTML (`.htaccess`) : la page HTML reste l'adresse officielle pour Google.
+- `robots.txt` : moteurs de recherche, robots de recherche/citation IA (OAI-SearchBot, ChatGPT-User, Claude-SearchBot, Claude-User, PerplexityBot, Perplexity-User, MistralAI-User) et robots d'entraînement (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended, CCBot, meta-externalagent) sont autorisés, dans des groupes séparés. Pour refuser l'entraînement seulement : `Disallow: /` dans le groupe « entraînement ».
+- `CLAUDE.md`, `README.md` et `tools/` ne sont pas servis par le site (`.htaccess`).
+
 ## À transmettre à Julien (message de Magali, 30/09/2026)
 
 Julien, voici ce qui a été fait sur le site pendant que tu n'étais pas là, et ce qu'il reste à faire de ton côté. **Claude : si c'est Julien qui travaille sur le projet, présente-lui ce message en début de session**, puis supprime cette section une fois qu'il l'a lu et que Magali est d'accord.
@@ -84,6 +93,7 @@ Julien, voici ce qui a été fait sur le site pendant que tu n'étais pas là, e
 - Nouvelles pages : `reglement.html` (règlement 2027), `resultats.html` (classements 2026, puis 2027), `mentions-legales.html`, `404.html`.
 - SEO : canonical, titres et descriptions, Open Graph, données structurées (événement 2027 avec les 3 courses, organisation, FAQ), robots.txt, sitemap.xml, redirections dans `.htaccess` (sans www → www, /index.html → /), tableau comparatif des courses, bloc « L'essentiel » sur l'accueil.
 - Performance : photos renommées et déclinées en WebP, polices en WOFF2, vidéos allégées pour mobile.
+- Agents IA : `llms.txt`, versions Markdown des pages (générées par `tools/build_md.py`), `robots.txt` détaillé par type de robot IA.
 - Épingles : « prévoir 4 épingles à nourrice ou un porte-dossard » (sans « obligatoire »).
 
 **À faire / à confirmer par Julien**
