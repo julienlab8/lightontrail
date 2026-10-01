@@ -26,7 +26,7 @@ Ouvertes depuis le 29 septembre pour le 17 KM\*, le 37 KM\*\* et le 54 KM\*\*\*.
 
 #### Licence & santé
 
-Licence sportive en cours de validité ou attestation PPS (Parcours de Prévention Santé) demandée. À télécharger au plus tard quinze jours avant l'événement.
+Pour les majeurs : licence FFA (Athlé Compétition, Entreprise ou Running), Pass' J'aime Courir ou [attestation PPS](https://pps.athle.fr/) (Parcours de Prévention Santé, à faire en ligne). À déposer sur njuko au plus tard deux semaines avant la course. Mineurs : voir le [règlement](https://www.lightontrail.com/reglement.html).
 
 #### Retrait des dossards
 
@@ -38,11 +38,11 @@ Accès & stationnement
 
 ### Rejoindre le lac.
 
-Départ et arrivée au Village LIGHT ON, à la Base de Loisirs de Celles-sur-Plaine (Vosges, 88110), au bord du lac de Pierre-Percée et à deux pas de la Meurthe-et-Moselle.
+Départ et arrivée au Village LIGHT ON, à la Base de Loisirs de Celles-sur-Plaine (Vosges, 88110), au bord du lac de la Plaine, à quelques minutes du lac de Pierre-Percée.
 
 #### En voiture
 
-Village LIGHT ON à Celles-sur-Plaine, à environ 1h de Nancy comme de Strasbourg. L'itinéraire précis vers le Village sera indiqué avant la course.
+Village LIGHT ON à Celles-sur-Plaine : environ 1h10 de Nancy, 1h20 de Strasbourg et 1h d'Épinal. [Itinéraire vers le Village LIGHT ON](https://www.google.com/maps/dir/?api=1&destination=48.45055,6.93599).
 
 #### Stationnement
 
@@ -68,7 +68,7 @@ Canoë, paddle, accrobranche, base de loisirs : le site [Pierre-Percée Pays de
 
 #### Réserver tôt
 
-Les gîtes autour du lac ne sont pas si nombreux. Le plus simple : réserver le même jour que votre dossard.
+Pour dormir au bord du lac, mieux vaut s'y prendre tôt. Le plus simple : réserver le même jour que votre dossard.
 
 Restauration
 
@@ -124,7 +124,19 @@ FAQ
 
 #### Faut-il une licence pour participer ?
 
-Une licence sportive en cours de validité ou une attestation PPS (Parcours de Prévention Santé) est demandée au retrait du dossard, conformément à la réglementation.
+Non, mais il faut un justificatif. Pour les majeurs : licence FFA (Athlé Compétition, Entreprise ou Running), Pass' J'aime Courir ou [attestation PPS](https://pps.athle.fr/), à déposer sur njuko au plus tard deux semaines avant la course. Les conditions pour les mineurs sont dans le [règlement](https://www.lightontrail.com/reglement.html).
+
+#### À partir de quel âge ?
+
+17 KM\* : à partir de la catégorie Junior (né·e en 2009 et avant). 37 KM\*\* et 54 KM\*\*\* : à partir de la catégorie Espoir (né·e en 2007 et avant).
+
+#### Peut-on s'inscrire sur place ?
+
+Non, les inscriptions se font uniquement en ligne, sur njuko. Elles ferment le jeudi 1er avril 2027 à 20h00, ou avant si tous les dossards sont partis.
+
+#### Je ne peux plus venir, que faire ?
+
+Vous pouvez transférer votre dossard à un autre coureur jusqu'au jeudi 1er avril 2027 à 20h00, depuis votre espace participant njuko (« Transférer mon inscription »). Sur certificat médical, 50 % des frais d'inscription sont remboursés jusqu'à un mois avant la course. Tout est détaillé dans le [règlement](https://www.lightontrail.com/reglement.html).
 
 #### Les courses sont-elles chronométrées ?
 

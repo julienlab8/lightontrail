@@ -96,11 +96,11 @@ Pierre-Percée & le Pays des Lacs
 
 ### Le Lac de Pierre-Percée.
 
-Départ et arrivée à Celles-sur-Plaine (88110), entre Meurthe-et-Moselle et Vosges. Autour, l'un des plus grands lacs de Lorraine et des kilomètres de forêt : c'est le lac qui donne le ton des parcours.
+Départ et arrivée à Celles-sur-Plaine (Vosges, 88110), au bord du lac de la Plaine. Juste au nord, côté Meurthe-et-Moselle, l'un des plus grands lacs de Lorraine et des kilomètres de forêt : c'est le lac de Pierre-Percée qui donne le ton des parcours.
 
 #### Le lac
 
-L'un des plus grands lacs de Lorraine, entre Vosges et Meurthe-et-Moselle. Les parcours le longent, le surplombent, et tout le monde le retrouve à l'arrivée.
+L'un des plus grands lacs de Lorraine, en Meurthe-et-Moselle, juste au nord du Village LIGHT ON. Les parcours le longent, le surplombent, et tout le monde le retrouve à l'arrivée.
 
 #### La forêt vosgienne
 
@@ -108,7 +108,7 @@ Sapins, sous-bois, crêtes et singles : on court au cœur du massif. Pour le d�
 
 #### Venir et dormir sur place
 
-Environ 1h de Nancy comme de Strasbourg. Accès, stationnement et hébergements autour du lac : tout est dans [les infos pratiques](https://www.lightontrail.com/infos.html#acces).
+Environ 1h10 de Nancy, 1h20 de Strasbourg et 1h d'Épinal. Accès, stationnement et hébergements autour du lac : tout est dans [les infos pratiques](https://www.lightontrail.com/infos.html#acces).
 
 Éco-responsabilité
 

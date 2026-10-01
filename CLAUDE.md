@@ -73,7 +73,7 @@ Ne jamais modifier les informations pratiques (horaires, distances, dénivelés,
 - Photos : fichiers au nom descriptif, versions WebP dans `assets/img/webp/` (`nom-640.webp`, `nom-1280.webp`…, générées avec Pillow/libwebp, qualité 74) via `<picture>`, avec `width`/`height`. Toute nouvelle photo suit ce schéma. **Ne pas utiliser l'AVIF de macOS (ImageIO)** : Chrome l'affiche en gris uni.
 - Liens vers l'accueil : `./` (pas `index.html`). `404.html` utilise des chemins absolus (`/assets/...`).
 - Vidéos : une version légère `-mobile.mp4` (960 px) servie sous 700 px.
-- Géographie exacte : départ à Celles-sur-Plaine (Vosges, 88), Base de Loisirs ; lac à cheval sur Vosges et Meurthe-et-Moselle ; Lorraine, Grand Est.
+- Géographie exacte (vérifiée le 01/10/2026) : Village LIGHT ON à la Base de Loisirs de Celles-sur-Plaine (Vosges, 88), au bord du **lac de la Plaine** ; le **lac de Pierre-Percée** est juste au nord, **en Meurthe-et-Moselle** (3e plus grand lac artificiel de Lorraine). Départ GPS : 48,45° N, 6,94° E, 308 m. Trajets : ~1h10 de Nancy, ~1h20 de Strasbourg, ~1h d'Épinal. Pierre-Percée Pays des Lacs (paysdeslacs.com) n'est pas un office de tourisme : c'est le syndicat qui gère la base de loisirs, le camping et les gîtes.
 
 ## Agents IA : llms.txt, versions Markdown, robots (01/10/2026)
 

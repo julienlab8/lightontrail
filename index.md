@@ -1,6 +1,6 @@
 # LIGHT ON TRAIL Pierre-Percée*** · Trail 17, 37 et 54 km · 4 avril 2027
 
-> Trail au bord du lac de Pierre-Percée, dans les Vosges : 17, 37 ou 54 KM le dimanche 4 avril 2027, départ de Celles-sur-Plaine. Inscriptions ouvertes.
+> Trail autour du lac de Pierre-Percée : 17, 37 ou 54 KM le dimanche 4 avril 2027, départ de Celles-sur-Plaine dans les Vosges. Inscriptions ouvertes.
 
 Version Markdown de https://www.lightontrail.com/ . La page HTML fait foi.
 
