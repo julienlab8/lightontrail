@@ -132,7 +132,7 @@ Non, mais il faut un justificatif. Pour les majeurs : licence FFA (Athlé Comp�
 
 #### Peut-on s'inscrire sur place ?
 
-Non, les inscriptions se font uniquement en ligne, sur njuko. Elles ferment le jeudi 1er avril 2027 à 20h00, ou avant si tous les dossards sont partis.
+Non, les inscriptions se font uniquement en ligne, sur [njuko](https://in.njuko.com/light-on-trail-pierre-percee1790497118122). Elles ferment le jeudi 1er avril 2027 à 20h00, ou avant si tous les dossards sont partis.
 
 #### Je ne peux plus venir, que faire ?
 
