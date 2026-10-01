@@ -11,6 +11,7 @@ Aperçu local : `python3 -m http.server 8080` à la racine, puis http://localhos
 - L'organisateur est **LIGHT ON** (pas « LIGHT ON TRAIL »).
 - Ouverture des inscriptions : écrire « 29 septembre - 20h ».
 - Le village de l'événement s'appelle **Village LIGHT ON** (pour ne pas le confondre avec le village de Pierre-Percée ou de Celles-sur-Plaine).
+- Espaces du Village : **LIGHT ON Shop** (boutique), **LIGHT ON Kids** (château gonflable si météo favorable), **LIGHT OFF** (zone transats pour débrancher, validé par Magali). Buvette et restauration le dimanche uniquement.
 - Contact : hello@lightontri.com est volontaire (seule adresse pour le moment).
 - Réseaux : Instagram @lighton_trail, Facebook, YouTube @lightontri, LinkedIn light-on-events. Hashtag officiel : **#LightOnTrail** (un seul, sans année).
 - Le menu et le pied de page sont dupliqués dans chaque page HTML : toute modification doit être répétée sur toutes les pages.
