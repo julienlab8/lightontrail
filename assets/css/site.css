@@ -1229,3 +1229,7 @@
   .follow-links li::before { display: none !important; }
   .icard ul.follow-links { padding: 0; margin: 4px 0 18px; }
   .icard ul.follow-links li { padding-left: 0; }
+  /* section Contact (Communauté) */
+  .contact-big { font-family: var(--display); font-weight: 700; font-size: clamp(20px, 2.6vw, 34px); line-height: 1.15; color: var(--accent); overflow-wrap: anywhere; }
+  .contact-big:hover { color: var(--text); }
+  .contact-big { font-family: var(--font); letter-spacing: 0; }

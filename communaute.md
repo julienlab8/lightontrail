@@ -36,7 +36,7 @@ Parlons-en
 
 - [LinkedIn](https://www.linkedin.com/company/light-on-events)
 
-Une question ? Écrivez-nous à [hello@lightontri.com](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21) ou appelez le [06 37 08 97 57](tel:+33637089757).
+Une photo sur les sentiers ou au Village LIGHT ON ? Pensez à nous taguer : [@lighton_trail](https://www.instagram.com/lighton_trail/).
 
 [Nous écrire](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
 
@@ -71,6 +71,22 @@ Dossier de presse, chiffres clés, logos et photos libres de droits sont disponi
 #### Contact presse
 
 Écrivez-nous à [hello@lightontri.com](mailto:hello@lightontri.com) en précisant votre média et votre besoin. Nous revenons vers vous rapidement.
+
+Contact
+
+### Une question ? On vous répond.
+
+Courses, inscriptions, bénévolat, partenariat : une seule adresse pour tout le LIGHT ON TRAIL Pierre-Percée\*\*\*.
+
+#### E-mail
+
+[hello@lightontri.com](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
+
+#### Téléphone
+
+[06 37 08 97 57](tel:+33637089757)
+
+[Nous écrire](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
 
 #### Restez dans la boucle.
 
