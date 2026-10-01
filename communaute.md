@@ -36,7 +36,7 @@ Parlons-en
 
 - [LinkedIn](https://www.linkedin.com/company/light-on-events)
 
-Une photo sur les sentiers ou au Village LIGHT ON ? Pensez à nous taguer : [@lighton_trail](https://www.instagram.com/lighton_trail/).
+Une photo sur les sentiers ou au Village LIGHT ON ? Pensez à nous taguer : [@lighton_trail](https://www.instagram.com/lighton_trail/) et #LightOnTrail.
 
 [Nous écrire](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
 
