@@ -81,23 +81,23 @@ Voir le parcours
 
 > Un super terrain de jeu ! J'ai adoré ce parcours riche en singles et en relances !
 
-**Natascha R.**, 37 KM\*\*
+**Natascha R.** | 37 KM\*\*
 
 > Le plus beau parcours de trail que j'ai fait, surtout la première partie jusqu'au ravitaillement.
 
-**Olivier K.**, 17 KM\*
+**Olivier K.** | 17 KM\*
 
 > Superbe cadre ! Dommage de devoir courir et de ne pas pouvoir prendre de photos :)
 
-**Guillain L.**, 17 KM\*
+**Guillain L.** | 17 KM\*
 
 > Super organisation et super parcours en pleine forêt vosgienne et aux abords du lac. Super ambiance sur le site et sur les ravitos.
 
-**Renaud P.**, 37 KM\*\*
+**Renaud P.** | 37 KM\*\*
 
 > Très belle course, cadre très agréable, bénévoles au top, organisation extra ! Je reviendrai l'année prochaine avec grand plaisir !
 
-**Tom S.**, 17 KM\*
+**Tom S.** | 17 KM\*
 
 Ce sont leurs mots, pas les nôtres. **Les prochains, c'est vous qui les écrirez.**
 

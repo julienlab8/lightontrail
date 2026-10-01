@@ -26,7 +26,7 @@ Forêts, crêtes et bord de lac : les parcours passent là où le massif est le
 
 #### Tout le monde fait la course
 
-Coureurs, bénévoles, supporters au bord du chemin. Un coureur l'a mieux résumé que nous : « Le parcours, l'ambiance, la bonne mentalité des organisateurs et des participants ! »Mickaël B., 37 KM\*\* 2026
+Coureurs, bénévoles, supporters au bord du chemin : plus on est de fous, plus on court. « L’ambiance trail était bien représentée. Très convivial et accessible à tout le monde. » - Paul R. | 17 KM\*
 
 #### Le plaisir avant le chrono
 
@@ -34,7 +34,7 @@ On vient pour les kilomètres et la ligne d’arrivée... Mais aussi pour lever 
 
 #### Carré, sans chichis
 
-Balisage, ravitos, signaleurs, dossards : on prépare tout pour que vous n'ayez qu'à courir. « Très bon état d'esprit, parcours très sympathique, bénévoles très disponibles, tout était simple. »Emilie R., 17 KM\* 2026
+Balisage, ravitos, signaleurs, dossards : tout est prêt, et la bonne humeur est fournie. Vous n'avez plus qu'à courir. « Très bon état d'esprit, parcours très sympathique, bénévoles très disponibles, tout était simple. » - Emilie R. | 17 KM\*
 
 Programme
 

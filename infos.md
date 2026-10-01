@@ -18,7 +18,7 @@ Les inscriptions au LIGHT ON TRAIL Pierre-Percée\*\*\* 2027 sont ouvertes, en l
 
 > « Orga super, facile pour récupérer les dossards, bénévoles sympas et aidants, beau parcours… Je reviendrai ! »
 
-**Victor D.**, 17 KM\* 2026
+**Victor D.** | 17 KM\*
 
 #### Inscriptions
 

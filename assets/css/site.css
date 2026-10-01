@@ -1234,3 +1234,8 @@
   .contact-big:hover { color: var(--text); }
   .contact-big { font-family: var(--font); letter-spacing: 0; }
   .icard.has-link .follow-links a, .icard.has-link a.card-cta, .icard.has-link p span { position: relative; z-index: 2; }
+  /* témoignages : « Prénom I. | 17 KM* », barre orange entre le nom et la distance */
+  .v-by .d::before, .q cite .d::before { content: "|"; display: inline-block; margin-right: 10px; color: var(--accent); font-family: var(--font); font-weight: 700; font-size: 1.15em; line-height: 1; }
+  .v-by { gap: 6px 10px; }
+  .q cite .d { color: inherit; }
+  .q cite .d::before { margin-left: 6px; }

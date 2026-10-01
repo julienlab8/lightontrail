@@ -182,7 +182,8 @@ def convert(src, dst):
     # séparateurs que la mise en page rend visuellement mais pas le texte brut
     page = re.sub(r'(<span class="eyebrow page-kicker">[^<]*)</span>', r"\1 - </span>", page)  # sur-titre du H1
     page = re.sub(r"<div><span>([^<]+)</span>", r"<div><span>\1 : </span>", page)             # « Dénivelé : 530 m »
-    page = page.replace('</b><span class="d">', '</b>, <span class="d">')                    # « Natascha R., 37 KM** »
+    page = page.replace('</b><span class="d">', '</b> | <span class="d">')                   # « Natascha R. | 37 KM** »
+    page = re.sub(r'<cite>([^<]*?) <span class="d">([^<]*)</span></cite>', r'<cite> - \1 | \2</cite>', page)  # citations de la page Événement
     page = re.sub(r"(<dd>[^<]*)<span>", r"\1. <span>", page)                                   # bloc L'essentiel
     page = page.replace("54 KM<span>", "54 KM. <span>")
     page = re.sub(r'</span>(<span class="pod-name">)', r'</span>. \1', page)                      # podiums : « 1. Nom - temps »
