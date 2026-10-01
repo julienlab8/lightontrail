@@ -22,7 +22,7 @@ Version Markdown de https://www.lightontrail.com/ . La page HTML fait foi.
 - **Lieu** : Lac de Pierre-Percée. Départ et arrivée à Celles-sur-Plaine (Vosges)
 - **Distances** : 17 KM\* · 37 KM\*\* · 54 KM\*\*\*. 530, 1250 et 1900 m D+
 - **Départs** : 7h30 · 8h30 · 9h30. Le 54 part en premier, le 17 en dernier
-- **Tarifs** : 19 € · 39 € · 49 €. Inscriptions ouvertes sur [njuko](https://in.njuko.com/light-on-trail-pierre-percee1790497118122)
+- **Tarifs** : 19 € · 39 € · 49 €. Tee-shirt offert. Inscriptions ouvertes sur [njuko](https://in.njuko.com/light-on-trail-pierre-percee1790497118122)
 - **Organisation** : LIGHT ON. 2e édition : 750 coureurs en 2026, 1 500 attendus en 2027
 
 **01** Un lac, trois distances

@@ -1239,3 +1239,6 @@
   .v-by { gap: 6px 10px; }
   .q cite .d { color: inherit; }
   .q cite .d::before { margin-left: 6px; }
+  /* citations courtes dans les blocs d'infos, la FAQ et les cartes */
+  .icard .q, .faq-item .q { display: block; margin-top: 14px; padding-left: 12px; border-left: 2px solid var(--accent); font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.72); }
+  .icard .q cite, .faq-item .q cite { display: block; margin-top: 6px; font-style: normal; font-size: 12px; color: var(--muted); }

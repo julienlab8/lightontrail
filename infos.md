@@ -40,6 +40,10 @@ Accès & stationnement
 
 Départ et arrivée au Village LIGHT ON, à la Base de Loisirs de Celles-sur-Plaine (Vosges, 88110), au bord du lac de la Plaine, à quelques minutes du lac de Pierre-Percée.
 
+> « Très beau parcours. Facilité d’accès. Merci à tous pour cette belle organisation ! À l’année prochaine sans hésitation ! »
+
+**Eric M.** | 17 KM\*
+
 #### En voiture
 
 Village LIGHT ON à Celles-sur-Plaine : environ 1h10 de Nancy, 1h20 de Strasbourg et 1h d'Épinal. [Itinéraire vers le Village LIGHT ON](https://www.google.com/maps/dir/?api=1&destination=48.45055,6.93599).
@@ -108,7 +112,7 @@ Courses en semi-autonomie : réserve d'eau personnelle vivement conseillée, ai
 
 #### Balisage
 
-Parcours balisés par panneaux, drapeaux et marquage au sol délébile, retirés après la course. Signaleurs bénévoles aux points clés et aux croisements.
+Parcours balisés par panneaux, drapeaux et marquage au sol délébile, retirés après la course. Signaleurs bénévoles aux points clés et aux croisements. « Le parcours au top et bien balisé. » - Sophie C. | 37 KM\*\*
 
 #### Sécurité & secours
 
@@ -142,9 +146,9 @@ Vous pouvez transférer votre dossard à un autre coureur jusqu'au jeudi 1er avr
 
 Oui, les trois distances sont chronométrées. L'esprit reste avant tout convivial : on vient pour les kilomètres et la ligne d’arrivée... Mais aussi pour lever le nez et en prendre plein les yeux !
 
-#### Y a-t-il une médaille finisher ?
+#### Y a-t-il une médaille finisher et un cadeau ?
 
-Oui ! Sur le 17, le 37 comme sur le 54, chaque finisher repart avec sa médaille. Elle vous attend juste après la ligne d'arrivée.
+Oui ! Chaque participant reçoit un tee-shirt en cadeau, et sur le 17, le 37 comme sur le 54, chaque finisher repart avec sa médaille, juste après la ligne d'arrivée. « La petite médaille à l'arrivée, c'est vraiment génial. Mieux que tout autre cadeau. » - Hervé G. | 37 KM\*\*
 
 #### Puis-je courir avec mon chien ?
 

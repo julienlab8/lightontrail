@@ -23,6 +23,7 @@ Comparatif des parcours du LIGHT ON TRAIL Pierre-Percée\*\*\* 2027
 | Dénivelé positif | 530 m | 1250 m | 1900 m |
 | Départ | 9h30 | 8h30 | 7h30 |
 | Tarif | 19 € | 39 € | 49 € |
+| Inclus | Tee-shirt offert, médaille finisher | Tee-shirt offert, médaille finisher | Tee-shirt offert, médaille finisher |
 | Ravitaillements | 1 sur le parcours (vers le km 11) + arrivée | 2 sur le parcours (km 11 et km 26) + arrivée | Répartis sur tout le parcours + arrivée |
 | Barrières horaires | Km 11,3 à 2h15 | Km 11,3 à 2h15, km 26,2 à 4h45 | Communiquées avant la course |
 | Pour qui ? | Premier trail, reprise, envie de paysage | Habitués du dénivelé et du terrain technique | Coureurs à l'aise sur les longues sorties |
@@ -54,17 +55,17 @@ Une seule, au km 11,3 à 2h15, pour la sécurité de tous. Horaire confirmé ava
 
 Ils l'ont couru en 2026
 
-> Le plus beau parcours de trail que j'ai fait, surtout la première partie jusqu'au ravitaillement.
+> Les paysages étaient magnifiques et le parcours vraiment adapté.
 
-**Olivier K.**
+**Augustin H.**
 
 > Un parcours avec beaucoup, beaucoup de singles comme je les aime ! Une belle alternance de montées et descentes ! BRAVO !
 
 **Bruno C.**
 
-> Le parcours était vraiment chouette, varié et plutôt bien dosé en termes de difficulté.
+> Très beau parcours le long du lac, tee-shirt offert, médaille…
 
-**Benjamin B.**
+**Océane G.**
 
 Tracé interactif et profil altimétrique du 17 KM\*. Téléchargez le fichier GPX depuis OpenRunner.
 
@@ -98,9 +99,9 @@ Ils l'ont couru en 2026
 
 **Franck N.**
 
-> Un super terrain de jeu ! J'ai adoré ce parcours riche en singles et en relances !
+> Les sentiers proposés étaient vraiment beaux avec une bonne variété. Mon impression générale est vraiment bonne. Bravo à vous et merci pour cette belle sortie trail.
 
-**Natascha R.**
+**Laurent J.**
 
 > Premier trail pour moi : bien organisé, informations claires et bénévoles avec le sourire. J'ai bien aimé l'ambiance d'un « petit » événement, merci !
 

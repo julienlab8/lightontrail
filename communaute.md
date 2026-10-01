@@ -16,7 +16,7 @@ Participer autrement
 
 #### [Devenir bénévole](mailto:hello@lightontri.com?subject=Et%20si%20je%20faisais%20partie%20du%20LIGHT%20ON%20Crew%20%3F)
 
-Ravitaillements, balisage, signaleurs, Village LIGHT ON : sans les bénévoles, pas de course. Rejoignez l'équipe le temps d'un week-end, côté coulisses. En 2026, les coureurs en parlaient encore à l'arrivée : « bénévoles au top », « bénévoles avec le sourire ».
+Ravitaillements, balisage, signaleurs, Village LIGHT ON : sans les bénévoles, pas de course. Rejoignez l'équipe le temps d'un week-end, côté coulisses. « Un beau parcours, les bénévoles au top. Merci ! » - Julie P. | 37 KM\*\*
 
 Rejoindre le Crew
 
