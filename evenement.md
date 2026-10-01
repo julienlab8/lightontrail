@@ -26,7 +26,7 @@ Forêts, crêtes et bord de lac : les parcours passent là où le massif est le
 
 #### Tout le monde fait la course
 
-Coureurs, bénévoles, supporters au bord du chemin : plus on est de fous, plus on court. « L’ambiance trail était bien représentée. Très convivial et accessible à tout le monde. » - Paul R. | 17 KM\*
+Coureurs, bénévoles, supporters au bord du chemin : chacun fait partie de l’aventure. Et plus on est nombreux, plus les sourires se multiplient. Ça, on adore ! « L’ambiance trail était bien représentée. Très convivial et accessible à tout le monde. » - Paul R. | 17 KM\*
 
 #### Le plaisir avant le chrono
 
