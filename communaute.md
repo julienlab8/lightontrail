@@ -26,7 +26,7 @@ Rejoindre le Crew
 
 Parlons-en
 
-#### Nous suivre
+#### [Nous suivre](https://www.instagram.com/lighton_trail/)
 
 - [Instagram](https://www.instagram.com/lighton_trail/)
 
