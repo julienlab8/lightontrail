@@ -84,17 +84,17 @@ Les partenaires et les acteurs du Pays des Lacs installent leurs stands au Villa
 
 Buvette et restauration en produits locaux le dimanche. Pour le café d'avant et le verre d'après.
 
-#### Côté supporters
+#### LIGHT ON Shop
 
-Transats et compagnie pour souffler entre deux passages. Les proches encouragent à l'arrivée, profitent du lac et gardent une place au soleil pour ceux qui finissent.
+La boutique LIGHT ON s'installe au Village. De quoi repartir avec un souvenir de la course, en plus de la médaille.
 
 #### LIGHT ON Kids
 
 Un espace pour les plus jeunes, avec château gonflable si la météo le permet. Les grands courent, les petits sautent.
 
-#### LIGHT ON Shop
+#### LIGHT OFF
 
-La boutique LIGHT ON s'installe au Village. De quoi repartir avec un souvenir de la course, en plus de la médaille.
+La zone pour débrancher : des transats au bord du lac, avant ou après la course. Les proches encouragent à l'arrivée, profitent du lac et gardent une place au soleil pour ceux qui finissent.
 
 #### Remise des récompenses
 
