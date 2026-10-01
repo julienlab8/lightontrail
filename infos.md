@@ -60,11 +60,11 @@ Le lac et la forêt valent bien une nuit sur place. Et vos jambes vous remercier
 
 #### Se loger
 
-Gîtes, campings et chambres d'hôtes dans les villages alentour (Celles-sur-Plaine, Pierre-Percée, Badonviller). Pensez à réserver tôt pour le week-end de course.
+Au bord du lac, à Celles-sur-Plaine comme le Village LIGHT ON : [les gîtes du lac](https://www.paysdeslacs.com/camping-vosges-88-lorraine/gites-cottages-vosges-88-lorraine/) et le camping de Pierre-Percée Pays des Lacs. Dans les villages alentour, d'[autres hébergements](https://www.paysdeslacs.com/autres-hebergements/), gîtes et chambres d'hôtes.
 
 #### Découvrir le territoire
 
-L'office de tourisme du Pays des Lacs recense hébergements et activités autour de Pierre-Percée pour prolonger le séjour.
+Canoë, paddle, accrobranche, base de loisirs : le site [Pierre-Percée Pays des Lacs](https://www.paysdeslacs.com/) présente les activités autour du lac, de quoi prolonger le week-end.
 
 #### Réserver tôt
 
