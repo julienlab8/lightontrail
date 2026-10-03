@@ -25,6 +25,12 @@ PAGES = {
     "communaute.html": "communaute.md",
     "actualites.html": "actualites.md",
 }
+# Pages indexées pour la recherche du site, mais SANS version Markdown publique
+# (elles ne font pas partie du corpus llms.txt : pas de .md, pas de canonical .md).
+SEARCH_ONLY = [
+    "medias.html",
+    "mentions-legales.html",
+]
 # blocs sans texte utile pour un agent (décor, compte à rebours, logos, formulaires)
 SKIP_TAGS = {"script", "style", "svg", "video", "iframe", "form", "picture", "img", "noscript", "button", "source"}
 SKIP_CLASSES = {"count-band", "h-partners", "h-newsletter", "swipe-hint", "geo", "glow", "picto", "sr-skip", "tl-tag"}
@@ -192,7 +198,10 @@ class MainToMarkdown(HTMLParser):
             self.write(data.replace("*", r"\*"))
 
 
-def convert(src, dst):
+def convert(src, dst=None):
+    """Extrait <main>, ajoute une entrée à l'index de recherche, et (si dst est
+    fourni) écrit la version Markdown de la page. dst=None : page indexée
+    seulement, sans fichier .md."""
     page = (ROOT / src).read_text(encoding="utf-8")
     title = html.unescape(re.search(r"<title>(.*?)</title>", page, re.S).group(1)).strip()
     desc = re.search(r'<meta name="description" content="([^"]*)"', page)
@@ -226,6 +235,9 @@ def convert(src, dst):
         "b": plain(body),
     })
 
+    if dst is None:
+        return  # page indexée seulement : pas de version Markdown publique
+
     url = BASE if src == "index.html" else BASE + src
     head = f"# {title}\n\n"
     if desc:
@@ -240,6 +252,9 @@ if __name__ == "__main__":
     for src, dst in PAGES.items():
         convert(src, dst)
         print(f"{src} -> {dst}")
+    for src in SEARCH_ONLY:
+        convert(src)
+        print(f"{src} -> (recherche seulement)")
     (ROOT / "assets" / "search-index.json").write_text(
         json.dumps(INDEX, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     print(f"assets/search-index.json -> {len(INDEX)} pages")

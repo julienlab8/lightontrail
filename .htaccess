@@ -26,6 +26,12 @@ RedirectMatch 404 ^/tools/
   <FilesMatch "\.(html|md|txt|xml)$">
     Header set Cache-Control "no-cache, must-revalidate"
   </FilesMatch>
+  # L'index de recherche est régénéré avec le contenu : il doit être revérifié
+  # à chaque fois (304 léger si rien n'a changé) pour ne pas servir un index
+  # périmé après l'ajout d'une page ou d'un texte.
+  <Files "search-index.json">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </Files>
 </IfModule>
 
 # Versions Markdown des pages (llms.txt v2) : la page HTML reste l'adresse officielle pour les moteurs
