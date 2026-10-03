@@ -1248,6 +1248,9 @@
   .cmp .cmp-utmb th, .cmp .cmp-utmb td { vertical-align: middle; padding-top: 18px; padding-bottom: 18px; }
   .cmp .cmp-utmb .utmb-logo { height: 26px; width: auto; display: block; }
   .cmp .cmp-utmb .utmb-cat { height: 46px; width: auto; display: block; }
+  /* Badge UTMB dans les stats de chaque course (à droite du tarif) */
+  .c-intro .facts .fact-utmb { align-self: end; }
+  .c-intro .facts .utmb-badge { height: 36px; width: auto; display: block; }
 
   /* ===== Classement dynamique (page Résultats) - ajout 03/10/2026 ===== */
   .res { margin-top: 34px; }
