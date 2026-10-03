@@ -44,7 +44,7 @@ Femmes
 
 #### 37 KM\*\*
 
-223 finishers.
+222 finishers.
 
 Hommes
 
@@ -63,6 +63,20 @@ Femmes
 - 3. Marianne Geisler - 03:59:46
 
 [Classement complet · PDF](https://www.lightontrail.com/assets/docs/resultats-37km-2026.pdf)
+
+Classements complets 2026
+
+### Tous les coureurs.
+
+Filtre femmes/hommes, par catégorie, recherche par nom, tri et pagination. Le classement officiel reste le PDF, à télécharger plus haut.
+
+#### 17 KM\*
+
+Dimanche 5 avril 2026 · 411 finishers
+
+#### 37 KM\*\*
+
+Dimanche 5 avril 2026 · 222 finishers
 
 ### Envie d'y figurer en 2027 ?
 

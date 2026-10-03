@@ -27,7 +27,8 @@ Comparatif des parcours du LIGHT ON TRAIL Pierre-Percée\*\*\* 2027
 | Ravitaillements | 1 sur le parcours (vers le km 11) + arrivée | 2 sur le parcours (km 11 et km 26) + arrivée | Répartis sur tout le parcours + arrivée |
 | Barrières horaires | Km 11,3 à 2h15 | Km 11,3 à 2h15, km 26,2 à 4h45 | Communiquées avant la course |
 | Pour qui ? | Premier trail, reprise, envie de paysage | Habitués du dénivelé et du terrain technique | Coureurs à l'aise sur les longues sorties |
-| Trace | [OpenRunner](https://www.openrunner.com/route-details/20906641) · [GPX](https://www.lightontrail.com/assets/gpx/trail-17km-pierre-percee-2026.gpx) | [OpenRunner](https://www.openrunner.com/route-details/23430555) | [OpenRunner](https://www.openrunner.com/route-details/23435863) |
+| Trace | [OpenRunner](https://www.openrunner.com/route-details/20906641) · [GPX](https://www.lightontrail.com/assets/gpx/trail-17km-pierre-percee-2026.gpx) | [OpenRunner](https://www.openrunner.com/route-details/23430555) · [GPX](https://www.lightontrail.com/assets/gpx/trail-37km-pierre-percee-2026.gpx) | [OpenRunner](https://www.openrunner.com/route-details/23435863) · [GPX](https://www.lightontrail.com/assets/gpx/trail-54km-pierre-percee-2026.gpx) |
+|  |  |  |  |
 
 ### 17 KM\*
 
@@ -79,7 +80,7 @@ Départ : 8h30
 
 Tarif : 39 €
 
-[S'inscrire sur le 37 KM\*\*](https://in.njuko.com/light-on-trail-pierre-percee1790497118122) [Voir la trace · OpenRunner](https://www.openrunner.com/route-details/23430555)
+[S'inscrire sur le 37 KM\*\*](https://in.njuko.com/light-on-trail-pierre-percee1790497118122) [Voir la trace · OpenRunner](https://www.openrunner.com/route-details/23430555) [Télécharger le GPX](https://www.lightontrail.com/assets/gpx/trail-37km-pierre-percee-2026.gpx)
 
 #### Pour qui ?
 
@@ -119,7 +120,7 @@ Départ : 7h30
 
 Tarif : 49 €
 
-[S'inscrire sur le 54 KM\*\*\*](https://in.njuko.com/light-on-trail-pierre-percee1790497118122) [Voir la trace · OpenRunner](https://www.openrunner.com/route-details/23435863)
+[S'inscrire sur le 54 KM\*\*\*](https://in.njuko.com/light-on-trail-pierre-percee1790497118122) [Voir la trace · OpenRunner](https://www.openrunner.com/route-details/23435863) [Télécharger le GPX](https://www.lightontrail.com/assets/gpx/trail-54km-pierre-percee-2026.gpx)
 
 #### Pour qui ?
 
