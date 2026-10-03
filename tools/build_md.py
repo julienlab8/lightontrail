@@ -8,6 +8,7 @@ modification d'une de ces pages :
     python3 tools/build_md.py
 """
 import html
+import json
 import re
 from html.parser import HTMLParser
 from pathlib import Path
@@ -28,6 +29,23 @@ PAGES = {
 SKIP_TAGS = {"script", "style", "svg", "video", "iframe", "form", "picture", "img", "noscript", "button", "source"}
 SKIP_CLASSES = {"count-band", "h-partners", "h-newsletter", "swipe-hint", "geo", "glow", "picto", "sr-skip", "tl-tag"}
 BLOCKS = {"p", "li", "h1", "h2", "h3", "h4", "dt", "dd", "summary", "blockquote", "figcaption", "caption", "tr", "td", "th", "div", "section", "figure", "details", "dl", "ul", "ol", "table", "article"}
+
+
+# index de recherche (rempli par convert(), écrit en JSON à la fin)
+INDEX = []
+
+
+def plain(md):
+    """Markdown -> texte brut pour l'index de recherche."""
+    t = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", md)      # [texte](url) -> texte
+    t = re.sub(r"^\s{0,3}#{1,6}\s*", "", t, flags=re.M)  # marqueurs de titres
+    t = re.sub(r"^\s*[-*]\s+", "", t, flags=re.M)         # puces
+    t = re.sub(r"^\s*>\s?", "", t, flags=re.M)            # citations
+    t = re.sub(r"^\s*-{3,}\s*$", "", t, flags=re.M)       # séparateurs / lignes de tableau
+    t = t.replace("**", "").replace("\\*", "*")           # gras, étoiles échappées
+    t = t.replace("|", " ")                                # colonnes de tableau
+    t = re.sub(r"\s+", " ", t)
+    return t.strip()
 
 
 def absolute(href):
@@ -196,6 +214,18 @@ def convert(src, dst):
     body = "\n".join(lines)
     body = re.sub(r"[ \t]*→[ \t]*$", "", body, flags=re.M)   # flèches décoratives en fin de ligne
     body = re.sub(r"\n{3,}", "\n\n", body).strip()
+
+    # entrée d'index de recherche (texte propre, titres pour la pondération)
+    heads = [m.group(2).replace("\\*", "*").strip()
+             for m in re.finditer(r"^(#{1,4}) (.+)$", body, flags=re.M)]
+    INDEX.append({
+        "u": "" if src == "index.html" else src,
+        "t": title,
+        "d": html.unescape(desc.group(1)) if desc else "",
+        "h": heads,
+        "b": plain(body),
+    })
+
     url = BASE if src == "index.html" else BASE + src
     head = f"# {title}\n\n"
     if desc:
@@ -210,3 +240,6 @@ if __name__ == "__main__":
     for src, dst in PAGES.items():
         convert(src, dst)
         print(f"{src} -> {dst}")
+    (ROOT / "assets" / "search-index.json").write_text(
+        json.dumps(INDEX, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    print(f"assets/search-index.json -> {len(INDEX)} pages")
