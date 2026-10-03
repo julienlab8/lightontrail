@@ -164,7 +164,7 @@ Courses en semi-autonomie : une réserve d'eau personnelle et des chaussures de
 
 #### Une autre question ?
 
-Écrivez-nous à [hello@lightontri.com](mailto:hello@lightontri.com) ou au [06 37 08 97 57](tel:+33637089757). On vous répond.
+Écrivez-nous à [hello@lightontri.com](mailto:hello@lightontri.com) ou au [03 74 47 56 52](tel:+33374475652). On vous répond.
 
 ### Une question avant de vous inscrire ?
 

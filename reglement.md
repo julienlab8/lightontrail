@@ -148,4 +148,4 @@ Chaque participant autorise LIGHT ON à utiliser les images sur lesquelles il po
 
 ### Renseignements
 
-Pour toute question sur les épreuves : [hello@lightontri.com](mailto:hello@lightontri.com) ou [06 37 08 97 57](tel:+33637089757). Directeur de course : Julien Labdant.
+Pour toute question sur les épreuves : [hello@lightontri.com](mailto:hello@lightontri.com) ou [03 74 47 56 52](tel:+33374475652). Directeur de course : Julien Labdant.

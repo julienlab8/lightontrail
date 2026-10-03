@@ -84,7 +84,7 @@ Courses, inscriptions, bénévolat, partenariat : une seule adresse pour tout l
 
 #### Téléphone
 
-[06 37 08 97 57](tel:+33637089757)
+[03 74 47 56 52](tel:+33374475652)
 
 [Nous écrire](mailto:hello@lightontri.com?subject=Help%20me%2C%20j%27ai%20une%20question%20%21)
 
