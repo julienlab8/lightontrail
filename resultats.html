@@ -24,7 +24,7 @@
 <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png?v=2" />
 <meta name="theme-color" content="#232323" />
 <link rel="preload" as="font" type="font/woff2" href="assets/fonts/LemonMilkBold.woff2" crossorigin />
-<link rel="stylesheet" href="assets/css/site.css?v=20261003b" />
+<link rel="stylesheet" href="assets/css/site.css?v=20261003e" />
 </head>
 <body>
 <a class="skip" href="#top">Aller au contenu</a>
@@ -197,7 +197,12 @@
         <p class="lede">Filtre femmes/hommes, par catégorie, recherche par nom, tri et pagination. Le classement officiel reste le PDF, à télécharger plus haut.</p>
       </div>
 
-      <div class="res reveal">
+      <div class="res-tabs" role="tablist" aria-label="Choisir la course">
+        <button class="res-tab" type="button" role="tab" id="tab-17km" aria-controls="res-block-17km" aria-selected="true">17 KM<em>*</em></button>
+        <button class="res-tab" type="button" role="tab" id="tab-37km" aria-controls="res-block-37km" aria-selected="false" tabindex="-1">37 KM<em>**</em></button>
+      </div>
+
+      <div class="res reveal" id="res-block-17km" role="tabpanel" aria-labelledby="tab-17km">
         <div class="res-head">
           <h3>17 KM<em>*</em></h3>
           <span class="res-sub">Dimanche 5 avril 2026 · 411 finishers</span>
@@ -205,7 +210,7 @@
         <div id="res-17km" data-results="17km-2026" data-page-size="50"></div>
       </div>
 
-      <div class="res reveal" style="margin-top:52px;">
+      <div class="res reveal" id="res-block-37km" role="tabpanel" aria-labelledby="tab-37km" hidden>
         <div class="res-head">
           <h3>37 KM<em>**</em></h3>
           <span class="res-sub">Dimanche 5 avril 2026 · 222 finishers</span>
@@ -278,5 +283,30 @@
 <script src="assets/js/resultats-17km-2026.js?v=20261003c"></script>
 <script src="assets/js/resultats-37km-2026.js?v=20261003b"></script>
 <script src="assets/js/resultats-table.js?v=20261003b"></script>
+<script>
+/* Onglets 17 KM / 37 KM des classements complets : affiche une seule course à la fois. */
+(function () {
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.res-tab'));
+  if (!tabs.length) return;
+  function select(tab) {
+    tabs.forEach(function (t) {
+      var on = t === tab;
+      t.setAttribute('aria-selected', on ? 'true' : 'false');
+      t.tabIndex = on ? 0 : -1;
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      if (panel) panel.hidden = !on;
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { select(tab); });
+    tab.addEventListener('keydown', function (e) {
+      var next = e.key === 'ArrowRight' ? tabs[i + 1] || tabs[0]
+               : e.key === 'ArrowLeft' ? tabs[i - 1] || tabs[tabs.length - 1]
+               : null;
+      if (next) { e.preventDefault(); select(next); next.focus(); }
+    });
+  });
+})();
+</script>
 </body>
 </html>
