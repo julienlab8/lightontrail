@@ -28,7 +28,7 @@ Comparatif des parcours du LIGHT ON TRAIL Pierre-Percée\*\*\* 2027
 | Barrières horaires | Km 11,3 à 2h15 | Km 11,3 à 2h15, km 26,2 à 4h45 | Communiquées avant la course |
 | Pour qui ? | Premier trail, reprise, envie de paysage | Habitués du dénivelé et du terrain technique | Coureurs à l'aise sur les longues sorties |
 | Trace | [OpenRunner](https://www.openrunner.com/route-details/20906641) · [GPX](https://www.lightontrail.com/assets/gpx/trail-17km-pierre-percee-2026.gpx) | [OpenRunner](https://www.openrunner.com/route-details/23430555) · [GPX](https://www.lightontrail.com/assets/gpx/trail-37km-pierre-percee-2026.gpx) | [OpenRunner](https://www.openrunner.com/route-details/23435863) · [GPX](https://www.lightontrail.com/assets/gpx/trail-54km-pierre-percee-2026.gpx) |
-| UTMB Index | 20K | 20K | 50K |
+| UTMB Index |  |  |  |
 
 ### 17 KM\*
 
