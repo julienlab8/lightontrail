@@ -15,6 +15,19 @@ ErrorDocument 404 /404.html
 </FilesMatch>
 RedirectMatch 404 ^/tools/
 
+# Cache : les pages doivent toujours être revérifiées auprès du serveur.
+# Sans cette règle, les navigateurs gardent les pages HTML en cache "au jugé"
+# et peuvent afficher une ancienne version (c'est ce qui masquait les classements).
+# Avec "no-cache", le navigateur revérifie à chaque visite : réponse 304 très
+# légère si rien n'a changé, sinon il récupère la nouvelle page. Personne ne
+# reste bloqué sur une vieille version. Les fichiers statiques (CSS/JS/images)
+# ne sont pas concernés : ils sont déjà versionnés par "?v=".
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|md|txt|xml)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
 # Versions Markdown des pages (llms.txt v2) : la page HTML reste l'adresse officielle pour les moteurs
 <IfModule mod_headers.c>
   <Files "index.md">
