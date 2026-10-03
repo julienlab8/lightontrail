@@ -1244,10 +1244,7 @@
   .icard .q cite, .faq-item .q cite { display: block; margin-top: 6px; font-style: normal; font-size: 12px; color: var(--muted); }
   @media (max-width: 700px) { .tl-tag { font-size: 10px; padding: 4px 8px; letter-spacing: .04em; margin-top: 4px; } }
 
-  /* ===== UTMB Index (ligne du tableau comparatif) - ajout 03/10/2026 ===== */
-  .cmp .cmp-utmb th, .cmp .cmp-utmb td { vertical-align: middle; padding-top: 18px; padding-bottom: 18px; }
-  .cmp .cmp-utmb .utmb-logo { height: 26px; width: auto; display: block; }
-  .cmp .cmp-utmb .utmb-cat { height: 46px; width: auto; display: block; }
+  /* ===== UTMB Index - ajout 03/10/2026 ===== */
   /* Badge UTMB dans les stats de chaque course (à droite du tarif) */
   .c-intro .facts .fact-utmb { align-self: end; }
   .c-intro .facts .utmb-badge { height: 36px; width: auto; display: block; }
