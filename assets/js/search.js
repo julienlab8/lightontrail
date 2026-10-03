@@ -198,6 +198,26 @@
     document.addEventListener('mouseover', function (e) {
       if (e.target.closest('[data-search-open]')) load();
     }, { once: true });
+    // Raccourcis clavier : « / » ou Cmd/Ctrl+K pour ouvrir la recherche.
+    document.addEventListener('keydown', function (e) {
+      if (overlay && !overlay.hidden) return;              // déjà ouverte
+      // Cmd+K (Mac) ou Ctrl+K (Windows/Linux)
+      if ((e.metaKey || e.ctrlKey) && (e.key === 'k' || e.key === 'K')) {
+        e.preventDefault(); open(null); return;
+      }
+      // « / » seul, sauf si l'utilisateur est déjà en train d'écrire quelque part
+      if (e.key === '/' && !e.metaKey && !e.ctrlKey && !e.altKey && !isTyping(e.target)) {
+        e.preventDefault(); open(null);
+      }
+    });
+  }
+
+  // vrai si le focus est dans un champ de saisie (ne pas voler le « / »)
+  function isTyping(el) {
+    if (!el) return false;
+    if (el.isContentEditable) return true;
+    var tag = (el.tagName || '').toLowerCase();
+    return tag === 'input' || tag === 'textarea' || tag === 'select';
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot);
   else boot();
