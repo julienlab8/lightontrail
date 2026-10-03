@@ -99,12 +99,12 @@ Julien, voici ce qui a été fait sur le site pendant que tu n'étais pas là, e
 - Épingles : « prévoir 4 épingles à nourrice ou un porte-dossard » (sans « obligatoire »).
 
 **À faire / à confirmer par Julien**
-1. Confirmer l'hébergeur Hostinger et « directeur de la publication : Julien Labdant » (page Mentions légales).
-2. Vérifier le règlement 2027 (catégorie Espoir sur le 54, années de naissance 2009/2007, dates limites au 1er avril 2027).
-3. Envoyer les GPX du 37 KM** et du 54 KM*** ; donner les barrières horaires du 54 dès qu'elles sont fixées.
-4. Google Search Console : créer la propriété « domaine » lightontrail.com et y déclarer https://www.lightontrail.com/sitemap.xml.
-5. Désactiver GitHub Pages (julienlab8.github.io/lightontrail) s'il ne sert plus : c'est une copie du site.
+1. ~~Confirmer l'hébergeur Hostinger et « directeur de la publication : Julien Labdant »~~ - confirmé par Julien (03/10/2026).
+2. ~~Vérifier le règlement 2027 (catégorie Espoir sur le 54, années de naissance 2009/2007, dates limites au 1er avril 2027)~~ - vérifié par Julien (03/10/2026).
+3. GPX du 37 KM** et du 54 KM*** reçus et mis en ligne (bouton « Télécharger le GPX » sur `courses.html`, fichiers dans `assets/gpx/`). Reste à donner les barrières horaires du 54 dès qu'elles sont fixées.
+4. ~~Google Search Console : créer la propriété « domaine » lightontrail.com et y déclarer le sitemap~~ - fait par Julien (03/10/2026).
+5. ~~Désactiver GitHub Pages (julienlab8.github.io/lightontrail)~~ - déjà désactivé : l'API GitHub renvoie `has_pages: false` et la page 404 (vérifié le 03/10/2026).
 6. Inscrire la course sur les calendriers : Kikourou, Jogging-International, Trail-Passion, Betrail ; regarder l'éligibilité ITRA du 54.
 7. Demander un lien vers le site à l'office de tourisme du Pays des Lacs et aux partenaires.
 8. Le 4 avril 2027 au soir : mettre les résultats 2027 sur `resultats.html`. Si les dossards sont épuisés, passer `InStock` à `SoldOut` dans le JSON-LD de `index.html`.
-9. Ménage sur Hostinger : d'anciennes photos supprimées ou renommées du dépôt sont restées sur le serveur (le déploiement ne les a pas effacées). Aucune page n'y renvoie, mais elles restent accessibles par leur adresse (l'ancienne image de partage notamment). À supprimer dans le gestionnaire de fichiers Hostinger, dossier `public_html/assets/img/` : `course-17.jpg`, `course-37.jpg`, `course-54.jpg`, `gallery-02.jpg`, `gallery-08.jpg`, `gallery-09.jpg`, `gallery-12.jpg`, `infos-dossard.jpg`, `infos-ravito.jpg`, `lieu-lac.jpg`, `og-image.jpg`, `programme-depart.jpg`. Ne pas toucher aux autres fichiers de ce dossier.
+9. Ménage sur Hostinger : d'anciennes photos supprimées ou renommées du dépôt étaient restées sur le serveur. Au 03/10/2026, 11 des 12 fichiers listés renvoient déjà 404 ; **il ne reste que `lieu-lac.jpg` (HTTP 200) à supprimer** dans `public_html/assets/img/` (gestionnaire de fichiers Hostinger ou FTP). Aucune page du site n'y renvoie. Ne pas toucher aux autres fichiers de ce dossier. Pour mémoire, la liste initiale : `course-17.jpg`, `course-37.jpg`, `course-54.jpg`, `gallery-02.jpg`, `gallery-08.jpg`, `gallery-09.jpg`, `gallery-12.jpg`, `infos-dossard.jpg`, `infos-ravito.jpg`, `lieu-lac.jpg`, `og-image.jpg`, `programme-depart.jpg`.
