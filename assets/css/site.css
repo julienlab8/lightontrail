@@ -1418,3 +1418,26 @@
     .search-field { font-size: 16px; }
   }
   @media (prefers-reduced-motion: reduce) { .search-backdrop { backdrop-filter: none; } }
+
+  /* ===== En-tête : Instagram + loupe à la hauteur exacte du bouton S'inscrire (11/10/2026) ===== */
+  .nav-cta .nav-search-btn { width: calc(46px * 920 / 940); height: calc(46px * 920 / 940); flex: none; }
+  .nav-ig-btn svg { width: 19px; height: 19px; }
+  @media (max-width: 520px) {
+    .nav-cta { gap: 8px; }
+    .nav-cta .nav-search-btn { width: calc(36px * 920 / 940); height: calc(36px * 920 / 940); }
+    .nav-cta .nav-search-btn svg { width: 16px; height: 16px; }
+  }
+  .nav .brand { flex-shrink: 0; }
+  /* très petits téléphones : pas assez de place pour 3 carrés + bouton + menu ; Instagram reste dans le pied de page */
+  @media (max-width: 370px) { .nav-cta .nav-ig-btn { display: none; } }
+  /* grande citation : jamais plus large que l'écran, césure pour les mots longs (allemand) */
+  .v-lead { max-width: min(1180px, 100%); }
+  .v-lead blockquote { hyphens: auto; overflow-wrap: break-word; }
+  @media (max-width: 380px) {
+    /* mots longs (allemand) : le dernier mot d'un titre peut se couper à son tiret plutôt que déborder */
+    h1 .nw, h2 .nw { white-space: normal; }
+    h1, h2 { hyphens: auto; overflow-wrap: break-word; }
+    /* tableau des résultats : un peu plus serré sur très petit écran */
+    .res-table { font-size: 13px; }
+    .res-table thead th, .res-table tbody td { padding: 9px 5px; }
+  }
