@@ -1441,3 +1441,12 @@
     .res-table { font-size: 13px; }
     .res-table thead th, .res-table tbody td { padding: 9px 5px; }
   }
+  /* très petits écrans : les boutons à texte long (allemand) passent sur deux lignes au lieu de déborder */
+  .courses-grid > * { min-width: 0; }
+  @media (max-width: 380px) {
+    .btn:not(.btn-go) { white-space: normal; max-width: 100%; padding-inline: 16px; line-height: 1.25; text-align: center; }
+  }
+  @media (max-width: 380px) {
+    h3, summary { hyphens: auto; overflow-wrap: break-word; }
+    .steps .icard > * { min-width: 0; }
+  }
